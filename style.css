@@ -1038,35 +1038,126 @@ nav li.active {
     .sidebar {
         width: 100%;
         height: auto;
-        padding: 1.5rem;
+        padding: 1rem 1rem 0.5rem 1rem;
         border-right: none;
         border-bottom: 1px solid var(--border-color);
+        background: rgba(10, 14, 23, 0.95);
     }
     .logo {
-        margin-bottom: 1.5rem;
+        margin-bottom: 0.75rem;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+    .nav-group-title {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        gap: 0.4rem;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 0.5rem;
+        -webkit-overflow-scrolling: touch;
+    }
+    nav ul::-webkit-scrollbar {
+        display: none;
+    }
+    nav li {
+        margin-bottom: 0;
+        padding: 0.5rem 0.85rem;
+        font-size: 0.82rem;
+        flex-shrink: 0;
+    }
+    nav li:hover {
+        transform: none;
     }
     .ticker-widget, .status-indicator {
         display: none;
     }
     .main-header {
-        padding: 0 1.5rem;
+        height: 60px;
+        padding: 0 1rem;
+    }
+    .breadcrumb .root-path,
+    .breadcrumb .separator {
+        display: none;
+    }
+    .quote-btn {
+        padding: 0.45rem 0.9rem;
+        font-size: 0.75rem;
     }
     .scroll-container {
-        padding: 1.5rem;
+        padding: 1rem;
     }
     .hero-banner {
-        padding: 2rem 1.5rem;
+        padding: 2rem 1.25rem;
         min-height: auto;
+        border-radius: 1rem;
     }
     .hero-text-wrap h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+    .hero-text-wrap p {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .hero-buttons button {
+        width: 100%;
+        padding: 0.7rem 1.5rem;
+    }
+    .section-title-wrap h3 {
+        font-size: 1.4rem;
+    }
+    .stat-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1.5rem;
+        gap: 1.5rem;
+        border-radius: 1rem;
+    }
+    .stat-box {
+        min-width: auto;
+    }
+    .stat-val {
+        font-size: 1.75rem;
+    }
+    .showcase-img {
+        max-height: 250px;
+        object-fit: cover;
+    }
+    .auto-hero {
+        min-height: auto;
+        border-radius: 1rem;
+    }
+    .auto-hero-img {
+        height: 250px;
+    }
+    .auto-hero-text {
+        padding: 1.5rem;
+    }
+    .auto-hero-text h2 {
+        font-size: 1.75rem;
     }
     .performance-stats {
         flex-direction: column;
+        padding: 1.5rem;
+        border-radius: 1rem;
     }
     .perf-divider {
         width: 80%;
         height: 1px;
+    }
+    .contact-info-panel,
+    .contact-form-panel {
+        padding: 2rem 1.5rem;
+        border-radius: 1rem;
+    }
+    .contact-info-panel h2 {
+        font-size: 1.75rem;
     }
     .form-row {
         flex-direction: column;

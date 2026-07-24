@@ -292,7 +292,7 @@ const i18n = {
         "table-hdr-purity": "Purity",
         "table-hdr-use": "Primary Application"
     },
-    zh: {
+    ch: {
         "nav-group-about": "企业介绍",
         "nav-company-intro": "公司概况",
         "nav-group-materials": "原材料事业部",
@@ -472,31 +472,31 @@ function showSection(sectionId) {
     // Set Header Breadcrumb and Section Title (with multilingual translation)
     let displayTitle = '';
     const isKo = currentLanguage === 'ko';
-    const isZh = currentLanguage === 'zh';
+    const isCh = currentLanguage === 'ch';
     
     switch (sectionId) {
         case 'company-intro':
-            displayTitle = isKo ? '회사 개요' : (isZh ? '公司概况' : 'Overview');
+            displayTitle = isKo ? '회사 개요' : (isCh ? '公司概况' : 'Overview');
             // Trigger Counter Animation again when entering intro
             initCounters();
             break;
         case 'materials-gold':
-            displayTitle = isKo ? '원자재 > 금 (Gold)' : (isZh ? '原材料 > 黄金' : 'Raw Materials > Gold');
+            displayTitle = isKo ? '원자재 > 금 (Gold)' : (isCh ? '原材料 > 黄金' : 'Raw Materials > Gold');
             break;
         case 'materials-aluminum':
-            displayTitle = isKo ? '원자재 > 알루미늄 (Aluminum)' : (isZh ? '原材料 > 铝材' : 'Raw Materials > Aluminum');
+            displayTitle = isKo ? '원자재 > 알루미늄 (Aluminum)' : (isCh ? '原材料 > 铝材' : 'Raw Materials > Aluminum');
             break;
         case 'materials-copper':
-            displayTitle = isKo ? '원자재 > 구리 (Copper)' : (isZh ? '原材料 > 铜材' : 'Raw Materials > Copper');
+            displayTitle = isKo ? '원자재 > 구리 (Copper)' : (isCh ? '原材料 > 铜材' : 'Raw Materials > Copper');
             break;
         case 'materials-coal':
-            displayTitle = isKo ? '원자재 > 석탄 (Coal)' : (isZh ? '原材料 > 煤炭' : 'Raw Materials > Coal');
+            displayTitle = isKo ? '원자재 > 석탄 (Coal)' : (isCh ? '原材料 > 煤炭' : 'Raw Materials > Coal');
             break;
         case 'automotive':
-            displayTitle = isKo ? '모빌리티 > 자동차 쇼케이스' : (isZh ? '出行事业 > 概念车' : 'Mobility > Concept EV');
+            displayTitle = isKo ? '모빌리티 > 자동차 쇼케이스' : (isCh ? '出行事业 > 概念车' : 'Mobility > Concept EV');
             break;
         case 'contact':
-            displayTitle = isKo ? '파트너십 > 협력 문의' : (isZh ? '合作伙伴 > 咨询' : 'Partnership > Inquiries');
+            displayTitle = isKo ? '파트너십 > 협력 문의' : (isCh ? '合作伙伴 > 咨询' : 'Partnership > Inquiries');
             break;
     }
     document.getElementById('current-page-title').innerText = displayTitle;
@@ -624,14 +624,14 @@ function initCounters() {
             } else {
                 let displayVal = '';
                 const isEn = currentLanguage === 'en';
-                const isZh = currentLanguage === 'zh';
+                const isCh = currentLanguage === 'ch';
                 
                 if (hasTextPlus && !hasTextTon) {
                     displayVal = `${start.toFixed(1)}B+`;
                 } else if (hasTextTon) {
-                    displayVal = isEn ? `${Math.round(start).toLocaleString()} Tons+` : (isZh ? `${Math.round(start).toLocaleString()}吨+` : `${Math.round(start).toLocaleString()}톤+`);
+                    displayVal = isEn ? `${Math.round(start).toLocaleString()} Tons+` : (isCh ? `${Math.round(start).toLocaleString()}吨+` : `${Math.round(start).toLocaleString()}톤+`);
                 } else if (hasTextGae) {
-                    displayVal = isEn ? `${Math.round(start)} Countries` : (isZh ? `${Math.round(start)}个国家` : `${Math.round(start)}개국`);
+                    displayVal = isEn ? `${Math.round(start)} Countries` : (isCh ? `${Math.round(start)}个国家` : `${Math.round(start)}개국`);
                 } else if (hasTextPercent) {
                     displayVal = `${start.toFixed(1)}%`;
                 } else {
@@ -653,8 +653,8 @@ function handleContactSubmit(event) {
     submitBtn.disabled = true;
     
     const isEn = currentLanguage === 'en';
-    const isZh = currentLanguage === 'zh';
-    submitBtn.innerHTML = isEn ? '<i class="fa-solid fa-circle-notch fa-spin"></i> Submitting...' : (isZh ? '<i class="fa-solid fa-circle-notch fa-spin"></i> 发送中...' : '<i class="fa-solid fa-circle-notch fa-spin"></i> 전송 중...');
+    const isCh = currentLanguage === 'ch';
+    submitBtn.innerHTML = isEn ? '<i class="fa-solid fa-circle-notch fa-spin"></i> Submitting...' : (isCh ? '<i class="fa-solid fa-circle-notch fa-spin"></i> 发送中...' : '<i class="fa-solid fa-circle-notch fa-spin"></i> 전송 중...');
     
     setTimeout(() => {
         // Show success modal

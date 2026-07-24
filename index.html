@@ -18,37 +18,37 @@
                 <span>PEITO</span>
             </div>
             <nav>
-                <div class="nav-group-title">기업 소개</div>
+                <div class="nav-group-title" data-i18n="nav-group-about">기업 소개</div>
                 <ul>
                     <li id="nav-company-intro" class="active" onclick="showSection('company-intro')">
-                        <i class="fa-solid fa-circle-info"></i> 회사 개요
+                        <i class="fa-solid fa-circle-info"></i> <span data-i18n="nav-company-intro">회사 개요</span>
                     </li>
                 </ul>
-                <div class="nav-group-title">원자재 사업부</div>
+                <div class="nav-group-title" data-i18n="nav-group-materials">원자재 사업부</div>
                 <ul>
                     <li id="nav-materials-gold" onclick="showSection('materials-gold')">
-                        <i class="fa-solid fa-coins" style="color: #ffd700;"></i> 금 (Gold)
+                        <i class="fa-solid fa-coins" style="color: #ffd700;"></i> <span data-i18n="nav-gold">금 (Gold)</span>
                     </li>
                     <li id="nav-materials-aluminum" onclick="showSection('materials-aluminum')">
-                        <i class="fa-solid fa-cubes" style="color: #e5e5e5;"></i> 알루미늄 (Al)
+                        <i class="fa-solid fa-cubes" style="color: #e5e5e5;"></i> <span data-i18n="nav-aluminum">알루미늄 (Al)</span>
                     </li>
                     <li id="nav-materials-copper" onclick="showSection('materials-copper')">
-                        <i class="fa-solid fa-plug" style="color: #ff7f50;"></i> 구리 (Copper)
+                        <i class="fa-solid fa-plug" style="color: #ff7f50;"></i> <span data-i18n="nav-copper">구리 (Copper)</span>
                     </li>
                     <li id="nav-materials-coal" onclick="showSection('materials-coal')">
-                        <i class="fa-solid fa-fire-flame-simple" style="color: #555555;"></i> 석탄 (Coal)
+                        <i class="fa-solid fa-fire-flame-simple" style="color: #555555;"></i> <span data-i18n="nav-coal">석탄 (Coal)</span>
                     </li>
                 </ul>
-                <div class="nav-group-title">모빌리티 사업부</div>
+                <div class="nav-group-title" data-i18n="nav-group-mobility">모빌리티 사업부</div>
                 <ul>
                     <li id="nav-automotive" onclick="showSection('automotive')">
-                        <i class="fa-solid fa-car-side" style="color: #00e5ff;"></i> 자동차 쇼케이스
+                        <i class="fa-solid fa-car-side" style="color: #00e5ff;"></i> <span data-i18n="nav-automotive">자동차 쇼케이스</span>
                     </li>
                 </ul>
-                <div class="nav-group-title">파트너십</div>
+                <div class="nav-group-title" data-i18n="nav-group-partnership">파트너십</div>
                 <ul>
                     <li id="nav-contact" onclick="showSection('contact')">
-                        <i class="fa-solid fa-envelope"></i> 협력 문의
+                        <i class="fa-solid fa-envelope"></i> <span data-i18n="nav-contact">협력 문의</span>
                     </li>
                 </ul>
             </nav>
@@ -56,7 +56,7 @@
             <!-- 시세 티커 미니 위젯 -->
             <div class="ticker-widget glass-card">
                 <div class="ticker-header">
-                    <span>원자재 실시간 시세</span>
+                    <span data-i18n="ticker-title">원자재 실시간 시세</span>
                     <span class="pulse-dot"></span>
                 </div>
                 <div class="ticker-body">
@@ -75,7 +75,7 @@
             
             <div class="status-indicator">
                 <div class="dot green"></div>
-                <span>Global Trading Active</span>
+                <span data-i18n="trading-active">Global Trading Active</span>
             </div>
         </aside>
 
@@ -85,11 +85,17 @@
                 <div class="breadcrumb">
                     <span class="root-path">PEITO Global</span>
                     <i class="fa-solid fa-chevron-right separator"></i>
-                    <span id="current-page-title" class="current-path">회사 개요</span>
+                    <span id="current-page-title" class="current-path" data-i18n="nav-company-intro">회사 개요</span>
                 </div>
                 <div class="header-actions">
+                    <!-- 다국어 변환 버튼 그룹 -->
+                    <div class="lang-selector glass-card">
+                        <button class="lang-btn active" data-lang="ko" onclick="changeLanguage('ko')">KO</button>
+                        <button class="lang-btn" data-lang="en" onclick="changeLanguage('en')">EN</button>
+                        <button class="lang-btn" data-lang="zh" onclick="changeLanguage('zh')">ZH</button>
+                    </div>
                     <button class="quote-btn" onclick="showSection('contact')">
-                        <i class="fa-solid fa-handshake"></i> 파트너 실시간 상담
+                        <i class="fa-solid fa-handshake"></i> <span data-i18n="header-consult-btn">파트너 실시간 상담</span>
                     </button>
                 </div>
             </header>
@@ -100,20 +106,20 @@
                     <div class="hero-banner glass-card">
                         <div class="hero-overlay"></div>
                         <div class="hero-text-wrap">
-                            <span class="badge">EST. 2012</span>
-                            <h2>글로벌 자원의 혁신과<br>미래 모빌리티의 융합</h2>
-                            <p>페이또(PEITO)는 천연 원자재 트레이딩 역량과 독자적인 하드웨어 설계 능력을 바탕으로, 원자재 조달부터 미래형 모빌리티 제조까지 수직계열화된 가치를 창출하는 혁신 기업입니다.</p>
+                            <span class="badge" data-i18n="hero-badge">EST. 2012</span>
+                            <h2 data-i18n="hero-title">글로벌 자원의 혁신과<br>미래 모빌리티의 융합</h2>
+                            <p data-i18n="hero-desc">페이또(PEITO)는 천연 원자재 트레이딩 역량과 독자적인 하드웨어 설계 능력을 바탕으로, 원자재 조달부터 미래형 모빌리티 제조까지 수직계열화된 가치를 창출하는 혁신 기업입니다.</p>
                             <div class="hero-buttons">
-                                <button class="primary-btn" onclick="showSection('automotive')">모빌리티 알아보기</button>
-                                <button class="secondary-btn" onclick="showSection('materials-gold')">원자재 사업부</button>
+                                <button class="primary-btn" onclick="showSection('automotive')" data-i18n="hero-btn-primary">모빌리티 알아보기</button>
+                                <button class="secondary-btn" onclick="showSection('materials-gold')" data-i18n="hero-btn-secondary">원자재 사업부</button>
                             </div>
                         </div>
                     </div>
 
                     <!-- Core Value Section -->
                     <div class="section-title-wrap">
-                        <h3>페이또의 핵심 사업 역량</h3>
-                        <p>원자재와 모빌리티가 조화롭게 결합된 페이또의 주요 비즈니스 포트폴리오입니다.</p>
+                        <h3 data-i18n="core-value-title">페이또의 핵심 사업 역량</h3>
+                        <p data-i18n="core-value-desc">원자재와 모빌리티가 조화롭게 결합된 페이또의 주요 비즈니스 포트폴리오입니다.</p>
                     </div>
 
                     <div class="core-grid">
@@ -121,47 +127,47 @@
                             <div class="icon-wrap gold-glow">
                                 <i class="fa-solid fa-coins"></i>
                             </div>
-                            <h4>원자재 공급망 리더십</h4>
-                            <p>금, 알루미늄, 구리, 석탄 등 첨단 제조 및 에너지 인프라에 필수적인 핵심 자원들을 안정적이고 효율적으로 공급합니다.</p>
-                            <span class="link-span">더 알아보기 <i class="fa-solid fa-arrow-right"></i></span>
+                            <h4 data-i18n="value-card1-title">원자재 공급망 리더십</h4>
+                            <p data-i18n="value-card1-desc">금, 알루미늄, 구리, 석탄 등 첨단 제조 및 에너지 인프라에 필수적인 핵심 자원들을 안정적이고 효율적으로 공급합니다.</p>
+                            <span class="link-span"><span data-i18n="more-btn">더 알아보기</span> <i class="fa-solid fa-arrow-right"></i></span>
                         </div>
 
                         <div class="value-card glass-card hover-glow" onclick="showSection('automotive')">
                             <div class="icon-wrap auto-glow">
                                 <i class="fa-solid fa-car-side"></i>
                             </div>
-                            <h4>독자적 미래형 모빌리티</h4>
-                            <p>페이또의 초경량 알루미늄 가공재와 구리 전도 파츠를 결합하여 차세대 스마트 친환경 자동차와 전기 세단을 직접 설계·제조합니다.</p>
-                            <span class="link-span">더 알아보기 <i class="fa-solid fa-arrow-right"></i></span>
+                            <h4 data-i18n="value-card2-title">독자적 미래형 모빌리티</h4>
+                            <p data-i18n="value-card2-desc">페이또의 초경량 알루미늄 가공재와 구리 전도 파츠를 결합하여 차세대 스마트 친환경 자동차와 전기 세단을 직접 설계·제조합니다.</p>
+                            <span class="link-span"><span data-i18n="more-btn">더 알아보기</span> <i class="fa-solid fa-arrow-right"></i></span>
                         </div>
 
                         <div class="value-card glass-card hover-glow" onclick="showSection('contact')">
                             <div class="icon-wrap global-glow">
                                 <i class="fa-solid fa-network-wired"></i>
                             </div>
-                            <h4>글로벌 파트너십 네트워크</h4>
-                            <p>전 세계 광산 메이저 및 메이저 완성차 브랜드와의 전략적 제휴를 통해 혁신적인 공급 체인 다변화를 추진합니다.</p>
-                            <span class="link-span">더 알아보기 <i class="fa-solid fa-arrow-right"></i></span>
+                            <h4 data-i18n="value-card3-title">글로벌 파트너십 네트워크</h4>
+                            <p data-i18n="value-card3-desc">전 세계 광산 메이저 및 메이저 완성차 브랜드와의 전략적 제휴를 통해 혁신적인 공급 체인 다변화를 추진합니다.</p>
+                            <span class="link-span"><span data-i18n="more-btn">더 알아보기</span> <i class="fa-solid fa-arrow-right"></i></span>
                         </div>
                     </div>
 
-                    <!-- Statistics Dashboard (WOW Factor) -->
+                    <!-- Statistics Dashboard -->
                     <div class="stat-section glass-card">
                         <div class="stat-box">
                             <span class="stat-val" data-target="4.2">4.2B+</span>
-                            <span class="stat-label">글로벌 무역액 (USD)</span>
+                            <span class="stat-label" data-i18n="stat-label-trade">글로벌 무역액 (USD)</span>
                         </div>
                         <div class="stat-box">
                             <span class="stat-val" data-target="28">28개국</span>
-                            <span class="stat-label">글로벌 공급 네트워크</span>
+                            <span class="stat-label" data-i18n="stat-label-network">글로벌 공급 네트워크</span>
                         </div>
                         <div class="stat-box">
                             <span class="stat-val" data-target="150">150,000톤+</span>
-                            <span class="stat-label">연간 원자재 취급량</span>
+                            <span class="stat-label" data-i18n="stat-label-vol">연간 원자재 취급량</span>
                         </div>
                         <div class="stat-box">
                             <span class="stat-val" data-target="99.9">99.9%</span>
-                            <span class="stat-label">최상위 소재 순도 검증</span>
+                            <span class="stat-label" data-i18n="stat-label-purity">최상위 소재 순도 검증</span>
                         </div>
                     </div>
                 </section>
@@ -171,51 +177,51 @@
                     <div class="product-showcase">
                         <div class="product-media">
                             <img src="images/gold_ore.jpg" alt="금 실물 자산" class="showcase-img">
-                            <div class="img-caption">페이또 보증 999.9 파인 골드 실물</div>
+                            <div class="img-caption" data-i18n="gold-media-caption">페이또 보증 999.9 파인 골드 실물</div>
                         </div>
                         <div class="product-info">
-                            <span class="category-tag gold-tag">Safe Haven Asset</span>
-                            <h2>실물 골드 & 고부가가치 산업용 금 무역</h2>
-                            <p class="description">페이또는 글로벌 거시 경제 리스크 헤지를 위한 최상급 실물 금괴(Gold Bullion)를 안전하게 공급하며, 반도체 및 첨단 전자 디바이스의 기판 배선용 고순도 골드 스퍼터링 타겟과 본딩 와이어 공급망을 확보하고 있습니다.</p>
+                            <span class="category-tag gold-tag" data-i18n="gold-cat-tag">Safe Haven Asset</span>
+                            <h2 data-i18n="gold-product-title">실물 골드 & 고부가가치 산업용 금 무역</h2>
+                            <p class="description" data-i18n="gold-product-desc">페이또는 글로벌 거시 경제 리스크 헤지를 위한 최상급 실물 금괴(Gold Bullion)를 안전하게 공급하며, 반도체 및 첨단 전자 디바이스의 기판 배선용 고순도 골드 스퍼터링 타겟과 본딩 와이어 공급망을 확보하고 있습니다.</p>
                             
                             <div class="feature-bullets">
                                 <div class="bullet-item">
                                     <i class="fa-solid fa-check"></i>
-                                    <span>LBMA(런던귀금속시장연합회) 딜리버리 표준 보증 99.99% 골드바 공급</span>
+                                    <span data-i18n="gold-bullet1">LBMA(런던귀금속시장연합회) 딜리버리 표준 보증 99.99% 골드바 공급</span>
                                 </div>
                                 <div class="bullet-item">
                                     <i class="fa-solid fa-check"></i>
-                                    <span>글로벌 스마트 시큐리티 금고 연동 및 보험 보장 안전 보관 시스템 제공</span>
+                                    <span data-i18n="gold-bullet2">글로벌 스마트 시큐리티 금고 연동 및 보험 보장 안전 보관 시스템 제공</span>
                                 </div>
                                 <div class="bullet-item">
                                     <i class="fa-solid fa-check"></i>
-                                    <span>차세대 전기차 전장 부품 내식성 향상을 위한 마이크로 골드 본딩 소재 납품</span>
+                                    <span data-i18n="gold-bullet3">차세대 전기차 전장 부품 내식성 향상을 위한 마이크로 골드 본딩 소재 납품</span>
                                 </div>
                             </div>
 
                             <table class="specs-table">
                                 <thead>
                                     <tr>
-                                        <th>등급 / 스펙</th>
-                                        <th>순도 (Purity)</th>
-                                        <th>주요 용도</th>
+                                        <th data-i18n="table-hdr-spec">등급 / 스펙</th>
+                                        <th data-i18n="table-hdr-purity">순도 (Purity)</th>
+                                        <th data-i18n="table-hdr-use">주요 용도</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>LBMA Good Delivery Bar</td>
                                         <td>99.99% (9999 Fine)</td>
-                                        <td>헤지 자산, 금융권 예치, 실물 투자</td>
+                                        <td data-i18n="gold-table-use1">헤지 자산, 금융권 예치, 실물 투자</td>
                                     </tr>
                                     <tr>
                                         <td>Semiconductor Bonding Wire</td>
                                         <td>99.999% (Ultra-High)</td>
-                                        <td>반도체 리드프레임 접합, 미세 배선</td>
+                                        <td data-i18n="gold-table-use2">반도체 리드프레임 접합, 미세 배선</td>
                                     </tr>
                                     <tr>
                                         <td>Gold Sputtering Target</td>
                                         <td>99.99%</td>
-                                        <td>디스플레이 박막 증착, 연구용 코팅</td>
+                                        <td data-i18n="gold-table-use3">디스플레이 박막 증착, 연구용 코팅</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -227,55 +233,55 @@
                 <section id="materials-aluminum" class="content-section" style="display: none;">
                     <div class="product-showcase reverse">
                         <div class="product-info">
-                            <span class="category-tag aluminum-tag">Eco & Lightweight</span>
-                            <h2>미래 산업의 뼈대, 초경량 하이테크 알루미늄</h2>
-                            <p class="description">환경 규제와 친환경 에너지 시대의 핵심인 '경량화'를 위한 고성능 알루미늄 합금을 가공 및 유통합니다. 페이또의 고인장 알루미늄 프레스 플레이트와 고압 다이캐스팅 압출재는 배터리 팩 케이스와 미래 모빌리티 섀시의 구조적 핵심을 구성합니다.</p>
+                            <span class="category-tag aluminum-tag" data-i18n="al-cat-tag">Eco & Lightweight</span>
+                            <h2 data-i18n="al-product-title">미래 산업의 뼈대, 초경량 하이테크 알루미늄</h2>
+                            <p class="description" data-i18n="al-product-desc">환경 규제와 친환경 에너지 시대의 핵심인 '경량화'를 위한 고성능 알루미늄 합금을 가공 및 유통합니다. 페이또의 고인장 알루미늄 프레스 플레이트와 고압 다이캐스팅 압출재는 배터리 팩 케이스와 미래 모빌리티 섀시의 구조적 핵심을 구성합니다.</p>
                             
                             <div class="feature-bullets">
                                 <div class="bullet-item">
                                     <i class="fa-solid fa-check"></i>
-                                    <span>초경량 고강성 6000계 및 7000계 하이테크 항공·우주 합금 라인업 구축</span>
+                                    <span data-i18n="al-bullet1">초경량 고강성 6000계 및 7000계 하이테크 항공·우주 합금 라인업 구축</span>
                                 </div>
                                 <div class="bullet-item">
                                     <i class="fa-solid fa-check"></i>
-                                    <span>전기차(EV) 배터리 하우징 세이프티 가드용 고열전도도 압출 프로파일 공급</span>
+                                    <span data-i18n="al-bullet2">전기차(EV) 배터리 하우징 세이프티 가드용 고열전도도 압출 프로파일 공급</span>
                                 </div>
                                 <div class="bullet-item">
                                     <i class="fa-solid fa-check"></i>
-                                    <span>친환경 재생 알루미늄(Green Aluminum) 도입을 통한 저탄소 ESG 공급망 실현</span>
+                                    <span data-i18n="al-bullet3">친환경 재생 알루미늄(Green Aluminum) 도입을 통한 저탄소 ESG 공급망 실현</span>
                                 </div>
                             </div>
 
                             <table class="specs-table">
                                 <thead>
                                     <tr>
-                                        <th>합금 번호 (Series)</th>
-                                        <th>기계적 성질</th>
-                                        <th>적용 분야</th>
+                                        <th data-i18n="al-table-hdr-series">합금 번호 (Series)</th>
+                                        <th data-i18n="al-table-hdr-prop">기계적 성질</th>
+                                        <th data-i18n="table-hdr-use">적용 분야</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>Al-Mg-Si (6000계)</td>
-                                        <td>우수한 성형성 & 내식성</td>
-                                        <td>자동차 아우터 판넬, 전기차 배터리 팩 케이스</td>
+                                        <td data-i18n="al-table-prop1">우수한 성형성 & 내식성</td>
+                                        <td data-i18n="al-table-use1">자동차 아우터 판넬, 전기차 배터리 팩 케이스</td>
                                     </tr>
                                     <tr>
                                         <td>Al-Zn-Mg (7000계)</td>
-                                        <td>초고인장 강도, 내구력</td>
-                                        <td>항공기 동체 구조재, 방산 부품, 차체 범퍼빔</td>
+                                        <td data-i18n="al-table-prop2">초고인장 강도, 내구력</td>
+                                        <td data-i18n="al-table-use2">항공기 동체 구조재, 방산 부품, 차체 범퍼빔</td>
                                     </tr>
                                     <tr>
                                         <td>Recycled Eco-Al</td>
-                                        <td>탄소 배출량 75% 절감</td>
-                                        <td>IT 기기 외장재, ESG 지향 완성차 프레임</td>
+                                        <td data-i18n="al-table-prop3">탄소 배출량 75% 절감</td>
+                                        <td data-i18n="al-table-use3">IT 기기 외장재, ESG 지향 완성차 프레임</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div class="product-media">
                             <img src="images/aluminum.jpg" alt="알루미늄 롤 시트 가공 공장" class="showcase-img">
-                            <div class="img-caption">페이또 정밀 스마트 공장 알루미늄 코일 압연 공정</div>
+                            <div class="img-caption" data-i18n="al-media-caption">페이또 정밀 스마트 공장 알루미늄 코일 압연 공정</div>
                         </div>
                     </div>
                 </section>
@@ -285,51 +291,51 @@
                     <div class="product-showcase">
                         <div class="product-media">
                             <img src="images/copper.jpg" alt="구리 와이어 및 배관" class="showcase-img">
-                            <div class="img-caption">고순도 무산소 구리 튜브 및 와이어 루프</div>
+                            <div class="img-caption" data-i18n="copper-media-caption">고순도 무산소 구리 튜브 및 와이어 루프</div>
                         </div>
                         <div class="product-info">
-                            <span class="category-tag copper-tag">Electrification Core</span>
-                            <h2>전기차 혁명과 그리드망의 신경망, 구리(Copper)</h2>
-                            <p class="description">구리는 신재생에너지 인프라, 전력망 송전선, 그리고 전기 모터 구동의 필수 불가결한 혈관입니다. 페이또는 전기차 모터 고정자 코일에 필수적인 99.999% 무산소동(OFC) 전기동과 극박 구리 포일(동박)의 원활한 글로벌 수급 체계를 유지하고 있습니다.</p>
+                            <span class="category-tag copper-tag" data-i18n="copper-cat-tag">Electrification Core</span>
+                            <h2 data-i18n="copper-product-title">전기차 혁명과 그리드망의 신경망, 구리(Copper)</h2>
+                            <p class="description" data-i18n="copper-product-desc">구리는 신재생에너지 인프라, 전력망 송전선, 그리고 전기 모터 구동의 필수 불가결한 혈관입니다. 페이또는 전기차 모터 고정자 코일에 필수적인 99.999% 무산소동(OFC) 전기동과 극박 구리 포일(동박)의 원활한 글로벌 수급 체계를 유지하고 있습니다.</p>
                             
                             <div class="feature-bullets">
                                 <div class="bullet-item">
                                     <i class="fa-solid fa-check"></i>
-                                    <span>초고전도도 99.99% 전기동(LME Grade A 동음극) 글로벌 벌크 무역</span>
+                                    <span data-i18n="copper-bullet1">초고전도도 99.99% 전기동(LME Grade A 동음극) 글로벌 벌크 무역</span>
                                 </div>
                                 <div class="bullet-item">
                                     <i class="fa-solid fa-check"></i>
-                                    <span>전기차 배터리 음극 집전체용 나노미터급 초정밀 구리박(동박) 라인 확보</span>
+                                    <span data-i18n="copper-bullet2">전기차 배터리 음극 집전체용 나노미터급 초정밀 구리박(동박) 라인 확보</span>
                                 </div>
                                 <div class="bullet-item">
                                     <i class="fa-solid fa-check"></i>
-                                    <span>송배전 그리드 케이블 및 산업용 변압기 전도체 압출동 로드 생산 납품</span>
+                                    <span data-i18n="copper-bullet3">송배전 그리드 케이블 및 산업용 변압기 전도체 압출동 로드 생산 납품</span>
                                 </div>
                             </div>
 
                             <table class="specs-table">
                                 <thead>
                                     <tr>
-                                        <th>소재명 (Material)</th>
-                                        <th>전도도 (IACS)</th>
-                                        <th>특수 스펙 및 적용</th>
+                                        <th data-i18n="copper-table-hdr-material">소재명 (Material)</th>
+                                        <th data-i18n="copper-table-hdr-cond">전도도 (IACS)</th>
+                                        <th data-i18n="copper-table-hdr-spec">특수 스펙 및 적용</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>Oxygen-Free Copper (무산소동)</td>
                                         <td>&gt; 101%</td>
-                                        <td>전기차 구동모터 헤어핀 코일, 정밀 오디오 케이블</td>
+                                        <td data-i18n="copper-table-use1">전기차 구동모터 헤어핀 코일, 정밀 오디오 케이블</td>
                                     </tr>
                                     <tr>
                                         <td>Electrolytic Copper Cathode</td>
                                         <td>&gt; 100%</td>
-                                        <td>LME 등록 A등급 케소드, 신선 가공 원자재</td>
+                                        <td data-i18n="copper-table-use2">LME 등록 A등급 케소드, 신선 가공 원자재</td>
                                     </tr>
                                     <tr>
                                         <td>Ultra-Thin Copper Foil</td>
-                                        <td>고강도/고연신율</td>
-                                        <td>리튬 이온 이차전지 음극 집전박 (4.5~8μm 두께)</td>
+                                        <td data-i18n="copper-table-cond3">고강도/고연신율</td>
+                                        <td data-i18n="copper-table-use3">리튬 이온 이차전지 음극 집전박 (4.5~8μm 두께)</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -341,55 +347,55 @@
                 <section id="materials-coal" class="content-section" style="display: none;">
                     <div class="product-showcase reverse">
                         <div class="product-info">
-                            <span class="category-tag coal-tag">Industrial Energy</span>
-                            <h2>산업 동력원, 고효율 청정 탄소 제철 및 발전 무역</h2>
-                            <p class="description">현대 기초 제조 공정의 정수이며 철강 생산의 주원료인 점결탄(Coking Coal) 및 청정 친환경 발전용 고발열량 유연탄을 아시아-태평양 전역에 공급합니다. 페이또는 엄격한 성분 정밀 분석을 통해 환경 오염 유발 가스 유출량이 현저히 적은 친환경 청정 석탄 공급 라인업을 확보하고 있습니다.</p>
+                            <span class="category-tag coal-tag" data-i18n="coal-cat-tag">Industrial Energy</span>
+                            <h2 data-i18n="coal-product-title">산업 동력원, 고효율 청정 탄소 제철 및 발전 무역</h2>
+                            <p class="description" data-i18n="coal-product-desc">현대 기초 제조 공정의 정수이며 철강 생산의 주원료인 점결탄(Coking Coal) 및 청정 친환경 발전용 고발열량 유연탄을 아시아-태평양 전역에 공급합니다. 페이또는 엄격한 성분 정밀 분석을 통해 환경 오염 유발 가스 유출량이 현저히 적은 친환경 청정 석탄 공급 라인업을 확보하고 있습니다.</p>
                             
                             <div class="feature-bullets">
                                 <div class="bullet-item">
                                     <i class="fa-solid fa-check"></i>
-                                    <span>용광로(고로) 코크스 원료가 되는 프리미엄 강점결탄(Hard Coking Coal) 직수입</span>
+                                    <span data-i18n="coal-bullet1">용광로(고로) 코크스 원료가 되는 프리미엄 강점결탄(Hard Coking Coal) 직수입</span>
                                 </div>
                                 <div class="bullet-item">
                                     <i class="fa-solid fa-check"></i>
-                                    <span>질소산화물 및 황 함유량이 매우 낮아 탄소 포집(CCUS)에 용이한 청정 무연탄 공급</span>
+                                    <span data-i18n="coal-bullet2">질소산화물 및 황 함유량이 매우 낮아 탄소 포집(CCUS)에 용이한 청정 무연탄 공급</span>
                                 </div>
                                 <div class="bullet-item">
                                     <i class="fa-solid fa-check"></i>
-                                    <span>실시간 모니터링을 동반한 해상 물류 벌크선 차터링 서비스 연계</span>
+                                    <span data-i18n="coal-bullet3">실시간 모니터링을 동반한 해상 물류 벌크선 차터링 서비스 연계</span>
                                 </div>
                             </div>
 
                             <table class="specs-table">
                                 <thead>
                                     <tr>
-                                        <th>종류 (Category)</th>
-                                        <th>발열량 (Calorific Value)</th>
-                                        <th>성분 특이사항</th>
+                                        <th data-i18n="coal-table-hdr-type">종류 (Category)</th>
+                                        <th data-i18n="coal-table-hdr-cal">발열량 (Calorific Value)</th>
+                                        <th data-i18n="coal-table-hdr-prop">성분 특이사항</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>Premium Hard Coking Coal</td>
-                                        <td>제철야금용 고품격</td>
-                                        <td>낮은 회분(Ash < 9.5%), 저유황, 고결합성</td>
+                                        <td data-i18n="coal-table-cal1">제철야금용 고품격</td>
+                                        <td data-i18n="coal-table-prop1">낮은 회분(Ash < 9.5%), 저유황, 고결합성</td>
                                     </tr>
                                     <tr>
                                         <td>High Calorific Steam Coal</td>
                                         <td>6,500 ~ 7,200 kcal/kg</td>
-                                        <td>저회분, 고발열량, 저지발화성 발전용</td>
+                                        <td data-i18n="coal-table-prop2">저회분, 고발열량, 저지발화성 발전용</td>
                                     </tr>
                                     <tr>
                                         <td>Low Impurity Anthracite</td>
-                                        <td>7,500 kcal/kg 이상</td>
-                                        <td>최상급 무연탄, 철강 가탄제 및 특수 화학공업 원료</td>
+                                        <td data-i18n="coal-table-cal3">7,500 kcal/kg 이상</td>
+                                        <td data-i18n="coal-table-prop3">최상급 무연탄, 철강 가탄제 및 특수 화학공업 원료</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div class="product-media">
                             <img src="images/coal.jpg" alt="무연탄 적재 및 석탄 에너지" class="showcase-img">
-                            <div class="img-caption">페이또 벌크 항만 부두에 하역된 고열량 무연탄 입자</div>
+                            <div class="img-caption" data-i18n="coal-media-caption">페이또 벌크 항만 부두에 하역된 고열량 무연탄 입자</div>
                         </div>
                     </div>
                 </section>
@@ -401,52 +407,52 @@
                         <img src="images/concept_car.jpg" alt="페이또 전기차 콘셉트" class="auto-hero-img">
                         <div class="auto-hero-overlay"></div>
                         <div class="auto-hero-text">
-                            <span class="badge auto-badge">PEITO MOTOR DIVISION</span>
+                            <span class="badge auto-badge" data-i18n="auto-badge">PEITO MOTOR DIVISION</span>
                             <h2>PEITO IONIS Concept EV</h2>
-                            <p>페이또의 고인장 경량 알루미늄 플랫폼과 고효율 구리 헤어핀 전기 모터 기술이 집약된 차세대 프리미엄 스포츠 그란투리스모 전기차.</p>
+                            <p data-i18n="auto-hero-desc">페이또의 고인장 경량 알루미늄 플랫폼과 고효율 구리 헤어핀 전기 모터 기술이 집약된 차세대 프리미엄 스포츠 그란투리스모 전기차.</p>
                         </div>
                     </div>
 
                     <!-- Tech Specs Grid -->
                     <div class="section-title-wrap" style="margin-top: 3rem;">
-                        <h3>핵심 모빌리티 솔루션</h3>
-                        <p>원자재와 하이테크 하드웨어 기술을 융합한 페이또 모터스만의 고유 특성입니다.</p>
+                        <h3 data-i18n="auto-grid-title">핵심 모빌리티 솔루션</h3>
+                        <p data-i18n="auto-grid-desc">원자재와 하이테크 하드웨어 기술을 융합한 페이또 모터스만의 고유 특성입니다.</p>
                     </div>
 
                     <div class="auto-tech-grid">
                         <div class="tech-card glass-card">
                             <i class="fa-solid fa-battery-three-quarters tech-icon"></i>
-                            <h4>800V 초고압 배터리 팩</h4>
-                            <p>페이또 가공 알루미늄 하우징 기술과 고전도 동박 집전체를 채택하여 열안전성을 극대화했으며, 10%에서 80%까지 단 18분 만에 충전이 가능합니다.</p>
+                            <h4 data-i18n="auto-tech1-title">800V 초고압 배터리 팩</h4>
+                            <p data-i18n="auto-tech1-desc">페이또 가공 알루미늄 하우징 기술과 고전도 동박 집전체를 채택하여 열안전성을 극대화했으며, 10%에서 80%까지 단 18분 만에 충전이 가능합니다.</p>
                         </div>
 
                         <div class="tech-card glass-card">
                             <i class="fa-solid fa-microchip tech-icon"></i>
-                            <h4>인텔리전트 자율주행</h4>
-                            <p>라이다(LiDAR), 레이더 및 초음파 센서 12개를 고속 온보드 실리콘 반도체 칩셋에 직접 연계하여 레벨 3+ 고속도로 파일럿 자율운행을 안전하게 구현합니다.</p>
+                            <h4 data-i18n="auto-tech2-title">인텔리전트 자율주행</h4>
+                            <p data-i18n="auto-tech2-desc">라이다(LiDAR), 레이더 및 초음파 센서 12개를 고속 온보드 실리콘 반도체 칩셋에 직접 연계하여 레벨 3+ 고속도로 파일럿 자율운행을 안전하게 구현합니다.</p>
                         </div>
 
                         <div class="tech-card glass-card">
                             <i class="fa-solid fa-feather-pointed tech-icon"></i>
-                            <h4>알루미늄 모노코크 프레임</h4>
-                            <p>알루미늄 7000계 프레스 부품을 기가 캐스팅 공법과 접합하여 원가를 절감하고 차체 중량을 기존 스틸 대비 30% 감량, 전비 효율을 혁신적으로 상승시켰습니다.</p>
+                            <h4 data-i18n="auto-tech3-title">알루미늄 모노코크 프레임</h4>
+                            <p data-i18n="auto-tech3-desc">알루미늄 7000계 프레스 부품을 기가 캐스팅 공법과 접합하여 원가를 절감하고 차체 중량을 기존 스틸 대비 30% 감량, 전비 효율을 혁신적으로 상승시켰습니다.</p>
                         </div>
                     </div>
 
                     <div class="performance-stats glass-card">
                         <div class="perf-metric">
-                            <span class="metric-num">2.8초</span>
-                            <span class="metric-lbl">제로백 (0-100 km/h)</span>
+                            <span class="metric-num" data-i18n="auto-perf-val1">2.8초</span>
+                            <span class="metric-lbl" data-i18n="auto-perf-lbl1">제로백 (0-100 km/h)</span>
                         </div>
                         <div class="perf-divider"></div>
                         <div class="perf-metric">
                             <span class="metric-num">650 km</span>
-                            <span class="metric-lbl">1회 충전 주행거리 (WLTP)</span>
+                            <span class="metric-lbl" data-i18n="auto-perf-lbl2">1회 충전 주행거리 (WLTP)</span>
                         </div>
                         <div class="perf-divider"></div>
                         <div class="perf-metric">
-                            <span class="metric-num">720 hp</span>
-                            <span class="metric-lbl">합산 최대 출력 (Dual Motor)</span>
+                            <span class="metric-num" data-i18n="auto-perf-val3">720 hp</span>
+                            <span class="metric-lbl" data-i18n="auto-perf-lbl3">합산 최대 출력 (Dual Motor)</span>
                         </div>
                     </div>
                 </section>
@@ -455,28 +461,28 @@
                 <section id="contact" class="content-section" style="display: none;">
                     <div class="contact-layout">
                         <div class="contact-info-panel glass-card">
-                            <h2>PEITO 비즈니스<br>협력 및 문의</h2>
-                            <p>원자재 대량 공급 계약, 전기차 위탁 제조 협력, 파트너십 구축 등 페이또의 글로벌 전략 협력 담당자가 신속히 안내해 드리겠습니다.</p>
+                            <h2 data-i18n="contact-info-title">PEITO 비즈니스<br>협력 및 문의</h2>
+                            <p data-i18n="contact-info-desc">원자재 대량 공급 계약, 전기차 위탁 제조 협력, 파트너십 구축 등 페이또의 글로벌 전략 협력 담당자가 신속히 안내해 드리겠습니다.</p>
                             
                             <div class="contact-channels">
                                 <div class="channel-item">
                                     <i class="fa-solid fa-location-dot"></i>
                                     <div>
-                                        <h5>본사 소재지</h5>
-                                        <p>서울특별시 강남구 테헤란로 501 페이또 타워 18F</p>
+                                        <h5 data-i18n="contact-ch1-title">본사 소재지</h5>
+                                        <p data-i18n="contact-ch1-desc">서울특별시 강남구 테헤란로 501 페이또 타워 18F</p>
                                     </div>
                                 </div>
                                 <div class="channel-item">
                                     <i class="fa-solid fa-phone"></i>
                                     <div>
-                                        <h5>글로벌 트레이딩 데스크</h5>
-                                        <p>+82 (0)2-555-9204 (내선 1번)</p>
+                                        <h5 data-i18n="contact-ch2-title">글로벌 트레이딩 데스크</h5>
+                                        <p>+82 (0)2-555-9204 (Ext. 1)</p>
                                     </div>
                                 </div>
                                 <div class="channel-item">
                                     <i class="fa-solid fa-envelope-open-text"></i>
                                     <div>
-                                        <h5>비즈니스 문의 이메일</h5>
+                                        <h5 data-i18n="contact-ch3-title">비즈니스 문의 이메일</h5>
                                         <p>trading@peito-global.com</p>
                                     </div>
                                 </div>
@@ -487,38 +493,38 @@
                             <form id="peito-contact-form" onsubmit="handleContactSubmit(event)">
                                 <div class="form-row">
                                     <div class="form-group">
-                                        <label for="client-name">성명 *</label>
-                                        <input type="text" id="client-name" required placeholder="성명을 입력해 주세요.">
+                                        <label for="client-name" data-i18n="form-label-name">성명 *</label>
+                                        <input type="text" id="client-name" required data-placeholder="form-ph-name" placeholder="성명을 입력해 주세요.">
                                     </div>
                                     <div class="form-group">
-                                        <label for="client-company">회사명 *</label>
-                                        <input type="text" id="client-company" required placeholder="예: 페이또 모빌리티">
+                                        <label for="client-company" data-i18n="form-label-company">회사명 *</label>
+                                        <input type="text" id="client-company" required data-placeholder="form-ph-company" placeholder="예: 페이또 모빌리티">
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="client-email">이메일 주소 *</label>
+                                    <label for="client-email" data-i18n="form-label-email">이메일 주소 *</label>
                                     <input type="email" id="client-email" required placeholder="name@company.com">
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="inquiry-type">문의 사업부 *</label>
+                                    <label for="inquiry-type" data-i18n="form-label-type">문의 사업부 *</label>
                                     <select id="inquiry-type" required>
-                                        <option value="" disabled selected>선택해 주세요.</option>
-                                        <option value="raw-materials">원자재 구매 (금, 알루미늄, 구리, 석탄)</option>
-                                        <option value="automotive">모빌리티/자동차 사업 협력</option>
-                                        <option value="investment">투자 유치 및 IR</option>
-                                        <option value="other">기타 비즈니스 협력</option>
+                                        <option value="" disabled selected data-i18n="form-opt-select">선택해 주세요.</option>
+                                        <option value="raw-materials" data-i18n="form-opt-mat">원자재 구매 (금, 알루미늄, 구리, 석탄)</option>
+                                        <option value="automotive" data-i18n="form-opt-auto">모빌리티/자동차 사업 협력</option>
+                                        <option value="investment" data-i18n="form-opt-ir">투자 유치 및 IR</option>
+                                        <option value="other" data-i18n="form-opt-other">기타 비즈니스 협력</option>
                                     </select>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="client-message">문의 상세내용 *</label>
-                                    <textarea id="client-message" required rows="6" placeholder="구체적인 원자재 필요 규격 또는 제휴 제안 내용을 기재해주시면 담당자가 빠른 시일 내로 연락드립니다."></textarea>
+                                    <label for="client-message" data-i18n="form-label-msg">문의 상세내용 *</label>
+                                    <textarea id="client-message" required rows="6" data-placeholder="form-ph-msg" placeholder="구체적인 원자재 필요 규격 또는 제휴 제안 내용을 기재해주시면 담당자가 빠른 시일 내로 연락드립니다."></textarea>
                                 </div>
 
                                 <button type="submit" class="submit-btn">
-                                    <i class="fa-solid fa-paper-plane"></i> 협력 요청서 전송
+                                    <i class="fa-solid fa-paper-plane"></i> <span data-i18n="form-btn-submit">협력 요청서 전송</span>
                                 </button>
                             </form>
                         </div>
@@ -532,9 +538,9 @@
     <div id="success-modal" class="modal-overlay" style="display: none;">
         <div class="modal-card glass-card">
             <i class="fa-solid fa-circle-check success-icon"></i>
-            <h3>성공적으로 접수되었습니다</h3>
-            <p>귀중한 제휴 요청이 페이또 글로벌 영업 본부에 안전하게 접수되었습니다. 기재해주신 이메일로 24시간 이내에 담당자가 피드백을 전달해 드리겠습니다.</p>
-            <button onclick="closeSuccessModal()" class="primary-btn">확인</button>
+            <h3 data-i18n="modal-title">성공적으로 접수되었습니다</h3>
+            <p data-i18n="modal-desc">귀중한 제휴 요청이 페이또 글로벌 영업 본부에 안전하게 접수되었습니다. 기재해주신 이메일로 24시간 이내에 담당자가 피드백을 전달해 드리겠습니다.</p>
+            <button onclick="closeSuccessModal()" class="primary-btn" data-i18n="modal-btn-close">확인</button>
         </div>
     </div>
 

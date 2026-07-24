@@ -1,3 +1,447 @@
+// Multilingual Translation Dictionary
+const i18n = {
+    ko: {
+        "nav-group-about": "기업 소개",
+        "nav-company-intro": "회사 개요",
+        "nav-group-materials": "원자재 사업부",
+        "nav-gold": "금 (Gold)",
+        "nav-aluminum": "알루미늄 (Al)",
+        "nav-copper": "구리 (Copper)",
+        "nav-coal": "석탄 (Coal)",
+        "nav-group-mobility": "모빌리티 사업부",
+        "nav-automotive": "자동차 쇼케이스",
+        "nav-group-partnership": "파트너십",
+        "nav-contact": "협력 문의",
+        "ticker-title": "원자재 실시간 시세",
+        "trading-active": "Global Trading Active",
+        "header-consult-btn": "파트너 실시간 상담",
+        
+        // Intro Section
+        "hero-badge": "EST. 2012",
+        "hero-title": "글로벌 자원의 혁신과<br>미래 모빌리티의 융합",
+        "hero-desc": "페이또(PEITO)는 천연 원자재 트레이딩 역량과 독자적인 하드웨어 설계 능력을 바탕으로, 원자재 조달부터 미래형 모빌리티 제조까지 수직계열화된 가치를 창출하는 혁신 기업입니다.",
+        "hero-btn-primary": "모빌리티 알아보기",
+        "hero-btn-secondary": "원자재 사업부",
+        "core-value-title": "페이또의 핵심 사업 역량",
+        "core-value-desc": "원자재와 모빌리티가 조화롭게 결합된 페이또의 주요 비즈니스 포트폴리오입니다.",
+        "value-card1-title": "원자재 공급망 리더십",
+        "value-card1-desc": "금, 알루미늄, 구리, 석탄 등 첨단 제조 및 에너지 인프라에 필수적인 핵심 자원들을 안정적이고 효율적으로 공급합니다.",
+        "value-card2-title": "독자적 미래형 모빌리티",
+        "value-card2-desc": "페이또의 초경량 알루미늄 가공재와 구리 전도 파츠를 결합하여 차세대 스마트 친환경 자동차와 전기 세단을 직접 설계·제조합니다.",
+        "value-card3-title": "글로벌 파트너십 네트워크",
+        "value-card3-desc": "전 세계 광산 메이저 및 완성차 브랜드와의 전략적 제휴를 통해 혁신적인 공급 체인 다변화를 추진합니다.",
+        "more-btn": "더 알아보기",
+        "stat-label-trade": "글로벌 무역액 (USD)",
+        "stat-label-network": "글로벌 공급 네트워크",
+        "stat-label-vol": "연간 원자재 취급량",
+        "stat-label-purity": "최상위 소재 순도 검증",
+        
+        // Gold Section
+        "gold-media-caption": "페이또 보증 999.9 파인 골드 실물",
+        "gold-cat-tag": "Safe Haven Asset",
+        "gold-product-title": "실물 골드 & 고부가가치 산업용 금 무역",
+        "gold-product-desc": "페이또는 글로벌 거시 경제 리스크 헤지를 위한 최상급 실물 금괴(Gold Bullion)를 안전하게 공급하며, 반도체 및 첨단 전자 디바이스의 기판 배선용 고순도 골드 스퍼터링 타겟과 본딩 와이어 공급망을 확보하고 있습니다.",
+        "gold-bullet1": "LBMA(런던귀금속시장연합회) 딜리버리 표준 보증 99.99% 골드바 공급",
+        "gold-bullet2": "글로벌 스마트 시큐리티 금고 연동 및 보험 보장 안전 보관 시스템 제공",
+        "gold-bullet3": "차세대 전기차 전장 부품 내식성 향상을 위한 마이크로 골드 본딩 소재 납품",
+        "gold-table-use1": "헤지 자산, 금융권 예치, 실물 투자",
+        "gold-table-use2": "반도체 리드프레임 접합, 미세 배선",
+        "gold-table-use3": "디스플레이 박막 증착, 연구용 코팅",
+        
+        // Aluminum Section
+        "al-cat-tag": "Eco & Lightweight",
+        "al-product-title": "미래 산업의 뼈대, 초경량 하이테크 알루미늄",
+        "al-product-desc": "환경 규제와 친환경 에너지 시대의 핵심인 '경량화'를 위한 고성능 알루미늄 합금을 가공 및 유통합니다. 페이또의 고인장 알루미늄 프레스 플레이트와 고압 다이캐스팅 압출재는 배터리 팩 케이스와 미래 모빌리티 섀시의 구조적 핵심을 구성합니다.",
+        "al-bullet1": "초경량 고강성 6000계 및 7000계 하이테크 항공·우주 합금 라인업 구축",
+        "al-bullet2": "전기차(EV) 배터리 하우징 세이프티 가드용 고열전도도 압출 프로파일 공급",
+        "al-bullet3": "친환경 재생 알루미늄(Green Aluminum) 도입을 통한 저탄소 ESG 공급망 실현",
+        "al-table-hdr-series": "합금 번호 (Series)",
+        "al-table-hdr-prop": "기계적 성질",
+        "al-table-prop1": "우수한 성형성 & 내식성",
+        "al-table-use1": "자동차 아우터 판넬, 전기차 배터리 팩 케이스",
+        "al-table-prop2": "초고인장 강도, 내구력",
+        "al-table-use2": "항공기 동체 구조재, 방산 부품, 차체 범퍼빔",
+        "al-table-prop3": "탄소 배출량 75% 절감",
+        "al-table-use3": "IT 기기 외장재, ESG 지향 완성차 프레임",
+        
+        // Copper Section
+        "copper-media-caption": "고순도 무산소 구리 튜브 및 와이어 루프",
+        "copper-cat-tag": "Electrification Core",
+        "copper-product-title": "전기차 혁명과 그리드망의 신경망, 구리(Copper)",
+        "copper-product-desc": "구리는 신재생에너지 인프라, 전력망 송전선, 그리고 전기 모터 구동의 필수 불가결한 혈관입니다. 페이또는 전기차 모터 고정자 코일에 필수적인 99.999% 무산소동(OFC) 전기동과 극박 구리 포일(동박)의 원활한 글로벌 수급 체계를 유지하고 있습니다.",
+        "copper-bullet1": "초고전도도 99.99% 전기동(LME Grade A 동음극) 글로벌 벌크 무역",
+        "copper-bullet2": "전기차 배터리 음극 집전체용 나노미터급 초정밀 구리박(동박) 라인 확보",
+        "copper-bullet3": "송배전 그리드 케이블 및 산업용 변압기 전도체 압출동 로드 생산 납품",
+        "copper-table-hdr-material": "소재명 (Material)",
+        "copper-table-hdr-cond": "전도도 (IACS)",
+        "copper-table-hdr-spec": "특수 스펙 및 적용",
+        "copper-table-use1": "전기차 구동모터 헤어핀 코일, 정밀 오디오 케이블",
+        "copper-table-use2": "LME 등록 A등급 케소드, 신선 가공 원자재",
+        "copper-table-cond3": "고강도/고연신율",
+        "copper-table-use3": "리튬 이온 이차전지 음극 집전박 (4.5~8μm 두께)",
+        
+        // Coal Section
+        "coal-media-caption": "페이또 벌크 항만 부두에 하역된 고열량 무연탄 입자",
+        "coal-cat-tag": "Industrial Energy",
+        "coal-product-title": "산업 동력원, 고효율 청정 탄소 제철 및 발전 무역",
+        "coal-product-desc": "현대 기초 제조 공정의 정수이며 철강 생산의 주원료인 점결탄(Coking Coal) 및 청정 친환경 발전용 고발열량 유연탄을 아시아-태평양 전역에 공급합니다. 페이또는 엄격한 성분 정밀 분석을 통해 환경 오염 유발 가스 유출량이 현저히 적은 친환경 청정 석탄 공급 라인업을 확보하고 있습니다.",
+        "coal-bullet1": "용광로(고로) 코크스 원료가 되는 프리미엄 강점결탄(Hard Coking Coal) 직수입",
+        "coal-bullet2": "질소산화물 및 황 함유량이 매우 낮아 탄소 포집(CCUS)에 용이한 청정 무연탄 공급",
+        "coal-bullet3": "실시간 모니터링을 동반한 해상 물류 벌크선 차터링 서비스 연계",
+        "coal-table-hdr-type": "종류 (Category)",
+        "coal-table-hdr-cal": "발열량 (Calorific Value)",
+        "coal-table-hdr-prop": "성분 특이사항",
+        "coal-table-cal1": "제철야금용 고품격",
+        "coal-table-prop1": "낮은 회분(Ash < 9.5%), 저유황, 고결합성",
+        "coal-table-prop2": "저회분, 고발열량, 저지발화성 발전용",
+        "coal-table-cal3": "7,500 kcal/kg 이상",
+        "coal-table-prop3": "최상급 무연탄, 철강 가탄제 및 특수 화학공업 원료",
+        
+        // Automotive Section
+        "auto-badge": "PEITO MOTOR DIVISION",
+        "auto-hero-desc": "페이또의 고인장 경량 알루미늄 플랫폼과 고효율 구리 헤어핀 전기 모터 기술이 집약된 차세대 프리미엄 스포츠 그란투리스모 전기차.",
+        "auto-grid-title": "핵심 모빌리티 솔루션",
+        "auto-grid-desc": "원자재와 하이테크 하드웨어 기술을 융합한 페이또 모터스만의 고유 특성입니다.",
+        "auto-tech1-title": "800V 초고압 배터리 팩",
+        "auto-tech1-desc": "페이또 가공 알루미늄 하우징 기술과 고전도 동박 집전체를 채택하여 열안전성을 극대화했으며, 10%에서 80%까지 단 18분 만에 충전이 가능합니다.",
+        "auto-tech2-title": "인텔리전트 자율주행",
+        "auto-tech2-desc": "라이다(LiDAR), 레이더 및 초음파 센서 12개를 고속 온보드 실리콘 반도체 칩셋에 직접 연계하여 레벨 3+ 고속도로 파일럿 자율운행을 안전하게 구현합니다.",
+        "auto-tech3-title": "알루미늄 모노코크 프레임",
+        "auto-tech3-desc": "알루미늄 7000계 프레스 부품을 기가 캐스팅 공법과 접합하여 원가를 절감하고 차체 중량을 기존 스틸 대비 30% 감량, 전비 효율을 혁신적으로 상승시켰습니다.",
+        "auto-perf-val1": "2.8초",
+        "auto-perf-lbl1": "제로백 (0-100 km/h)",
+        "auto-perf-lbl2": "1회 충전 주행거리 (WLTP)",
+        "auto-perf-val3": "720 hp",
+        "auto-perf-lbl3": "합산 최대 출력 (Dual Motor)",
+        
+        // Contact Section
+        "contact-info-title": "PEITO 비즈니스<br>협력 및 문의",
+        "contact-info-desc": "원자재 대량 공급 계약, 전기차 위탁 제조 협력, 파트너십 구축 등 페이또의 글로벌 전략 협력 담당자가 신속히 안내해 드리겠습니다.",
+        "contact-ch1-title": "본사 소재지",
+        "contact-ch1-desc": "서울특별시 강남구 테헤란로 501 페이또 타워 18F",
+        "contact-ch2-title": "글로벌 트레이딩 데스크",
+        "contact-ch3-title": "비즈니스 문의 이메일",
+        "form-label-name": "성명 *",
+        "form-ph-name": "성명을 입력해 주세요.",
+        "form-label-company": "회사명 *",
+        "form-ph-company": "예: 페이또 모빌리티",
+        "form-label-email": "이메일 주소 *",
+        "form-label-type": "문의 사업부 *",
+        "form-opt-select": "선택해 주세요.",
+        "form-opt-mat": "원자재 구매 (금, 알루미늄, 구리, 석탄)",
+        "form-opt-auto": "모빌리티/자동차 사업 협력",
+        "form-opt-ir": "투자 유치 및 IR",
+        "form-opt-other": "기타 비즈니스 협력",
+        "form-label-msg": "문의 상세내용 *",
+        "form-ph-msg": "구체적인 원자재 필요 규격 또는 제휴 제안 내용을 기재해주시면 담당자가 빠른 시일 내로 연락드립니다.",
+        "form-btn-submit": "협력 요청서 전송",
+        
+        // Success Modal
+        "modal-title": "성공적으로 접수되었습니다",
+        "modal-desc": "귀중한 제휴 요청이 페이또 글로벌 영업 본부에 안전하게 접수되었습니다. 기재해주신 이메일로 24시간 이내에 담당자가 피드백을 전달해 드리겠습니다.",
+        "modal-btn-close": "확인",
+        
+        // Common Labels
+        "table-hdr-spec": "등급 / 스펙",
+        "table-hdr-purity": "순도 (Purity)",
+        "table-hdr-use": "주요 용도"
+    },
+    en: {
+        "nav-group-about": "ABOUT US",
+        "nav-company-intro": "Overview",
+        "nav-group-materials": "RAW MATERIALS",
+        "nav-gold": "Gold (Au)",
+        "nav-aluminum": "Aluminum (Al)",
+        "nav-copper": "Copper (Cu)",
+        "nav-coal": "Coal",
+        "nav-group-mobility": "MOBILITY",
+        "nav-automotive": "Concept EV",
+        "nav-group-partnership": "PARTNERSHIP",
+        "nav-contact": "Contact Us",
+        "ticker-title": "Live Commodity Price",
+        "trading-active": "Global Trading Active",
+        "header-consult-btn": "Live Consultation",
+        
+        // Intro Section
+        "hero-badge": "EST. 2012",
+        "hero-title": "Innovation of Global Resources<br>& Future Mobility Integration",
+        "hero-desc": "PEITO is an innovative company creating vertical value from raw material procurement to future mobility manufacturing based on global resource trading capabilities and proprietary hardware design engineering.",
+        "hero-btn-primary": "Explore Mobility",
+        "hero-btn-secondary": "Raw Materials",
+        "core-value-title": "PEITO Core Business Strengths",
+        "core-value-desc": "A balanced business portfolio combining premium resources and high-tech hardware.",
+        "value-card1-title": "Supply Chain Leadership",
+        "value-card1-desc": "Stable and efficient supply of essential resources such as gold, aluminum, copper, and coal for high-tech manufacturing.",
+        "value-card2-title": "Proprietary Future Mobility",
+        "value-card2-desc": "Designing and manufacturing next-generation smart electric vehicles by integration of our lightweight aluminum and copper alloys.",
+        "value-card3-title": "Global Partnership Network",
+        "value-card3-desc": "Driving supply chain diversification through strategic alliances with global mining majors and auto brands.",
+        "more-btn": "Learn More",
+        "stat-label-trade": "Global Trade Volume (USD)",
+        "stat-label-network": "Global Supply Network",
+        "stat-label-vol": "Annual Volume Handled",
+        "stat-label-purity": "Purity Verification Rate",
+        
+        // Gold Section
+        "gold-media-caption": "PEITO-certified 999.9 Fine Gold Bullion",
+        "gold-cat-tag": "Safe Haven Asset",
+        "gold-product-title": "Physical Gold & High-Value Industrial Gold Trade",
+        "gold-product-desc": "PEITO safely supplies premium gold bullion to hedge global macroeconomic risks. We also secure supply chains for high-purity gold sputtering targets and bonding wires.",
+        "gold-bullet1": "Supply of 99.99% gold bars guaranteed under LBMA delivery standards.",
+        "gold-bullet2": "Integrated with global smart security vaults, providing fully-insured safe deposit solutions.",
+        "gold-bullet3": "Supplying micro gold bonding wires to enhance corrosion resistance in automotive electronics.",
+        "gold-table-use1": "Hedging asset, financial reserves, physical investment",
+        "gold-table-use2": "Semiconductor leadframe bonding, fine wiring",
+        "gold-table-use3": "Display thin film deposition, research coating",
+        
+        // Aluminum Section
+        "al-cat-tag": "Eco & Lightweight",
+        "al-product-title": "Futuristic Ultra-Lightweight Aluminum Alloys",
+        "al-product-desc": "We process and distribute high-performance aluminum alloys essential for lightweight structures in the eco-friendly energy era. Our high-tensile plates and extrusions construct EV battery packs and vehicle chassis.",
+        "al-bullet1": "Advanced 6000 & 7000 series aerospace-grade high-strength alloy lineup.",
+        "al-bullet2": "High thermal conductivity extrusion profiles for EV battery pack protection guards.",
+        "al-bullet3": "Implementing low-carbon Green Aluminum to realize sustainable ESG supply chains.",
+        "al-table-hdr-series": "Alloy Series",
+        "al-table-hdr-prop": "Mechanical Properties",
+        "al-table-prop1": "Excellent formability & corrosion resistance",
+        "al-table-use1": "Automobile outer panels, EV battery pack housings",
+        "al-table-prop2": "Ultra-high tensile strength and durability",
+        "al-table-use2": "Aircraft fuselage structural members, defense, bumper beams",
+        "al-table-prop3": "75% reduction in carbon footprint",
+        "al-table-use3": "IT device casings, ESG-focused vehicle frames",
+        
+        // Copper Section
+        "copper-media-caption": "High-purity oxygen-free copper tubes and wire loops",
+        "copper-cat-tag": "Electrification Core",
+        "copper-product-title": "Nerve Center of EV Revolution & Power Grids",
+        "copper-product-desc": "Copper is the essential pathway for renewable energy grid transmission and electric motor propulsion. PEITO coordinates the global supply of 99.999% oxygen-free copper (OFC) and ultra-thin foils.",
+        "copper-bullet1": "Global bulk trading of 99.99% electrolytic copper cathodes (LME Grade A).",
+        "copper-bullet2": "Procuring nanometer-scale precision copper foils for lithium-ion battery anode collectors.",
+        "copper-bullet3": "Producing extruded copper rods for power grid transmission lines and industrial transformers.",
+        "copper-table-hdr-material": "Material Name",
+        "copper-table-hdr-cond": "Conductivity (IACS)",
+        "copper-table-hdr-spec": "Special Specs & Applications",
+        "copper-table-use1": "EV traction motor hairpin windings, precision audio cables",
+        "copper-table-use2": "LME Registered Grade A cathodes, wire drawing raw materials",
+        "copper-table-cond3": "High strength & high elongation",
+        "copper-table-use3": "Anode collector foil for Li-ion batteries (4.5~8μm thickness)",
+        
+        // Coal Section
+        "coal-media-caption": "High-calorific coal unloaded at PEITO bulk terminal",
+        "coal-cat-tag": "Industrial Energy",
+        "coal-product-title": "Industrial Energy, High-Calorific Clean Coal Trade",
+        "coal-product-desc": "We supply coking coal and high-calorific thermal coal across the Asia-Pacific region, crucial for steel manufacturing and power generation. PEITO ensures strict eco-friendly low-impurity standards.",
+        "coal-bullet1": "Direct import of premium Hard Coking Coal used for blast furnace coke raw material.",
+        "coal-bullet2": "Providing clean coal with low sulphur and nitrogen content to facilitate carbon capture.",
+        "coal-bullet3": "Seamless integration of dry bulk shipping and real-time maritime logistics tracking.",
+        "coal-table-hdr-type": "Coal Category",
+        "coal-table-hdr-cal": "Calorific Value",
+        "coal-table-hdr-prop": "Composition / Characteristics",
+        "coal-table-cal1": "Metallurgical Premium",
+        "coal-table-prop1": "Low ash (< 9.5%), low sulphur, high caking properties",
+        "coal-table-prop2": "Low ash, high calorific value, power generation utility",
+        "coal-table-cal3": "Over 7,500 kcal/kg",
+        "coal-table-prop3": "High-grade anthracite, steel recarburizer, chemical industry raw material",
+        
+        // Automotive Section
+        "auto-badge": "PEITO MOTOR DIVISION",
+        "auto-hero-desc": "Next-generation premium Grand Tourer EV integrating PEITO's high-tensile lightweight aluminum platform and high-efficiency copper motor windings.",
+        "auto-grid-title": "Key Mobility Solutions",
+        "auto-grid-desc": "Unique characteristics of PEITO Motors blending raw materials and hardware engineering.",
+        "auto-tech1-title": "800V Ultra-High Voltage Battery Pack",
+        "auto-tech1-desc": "Employs PEITO aluminum housing and high-conductivity copper foils for maximum thermal stability, enabling 10% to 80% charge in just 18 minutes.",
+        "auto-tech2-title": "Intelligent Autonomous Driving",
+        "auto-tech2-desc": "Integrates 12 LiDAR/Radar sensors with an onboard AI processor chip to safely achieve Level 3+ highway pilot automated driving.",
+        "auto-tech3-title": "Aluminum Monocoque Chassis",
+        "auto-tech3-desc": "Giga-casting aluminum 7000-series structural components reduces weight by 30% compared to steel, dramatically boosting efficiency.",
+        "auto-perf-val1": "2.8s",
+        "auto-perf-lbl1": "0-100 km/h Acceleration",
+        "auto-perf-lbl2": "Range per single charge (WLTP)",
+        "auto-perf-val3": "720 hp",
+        "auto-perf-lbl3": "Combined Output (Dual Motor)",
+        
+        // Contact Section
+        "contact-info-title": "PEITO Business<br>Partnership & Inquiry",
+        "contact-info-desc": "Our global strategy team will guide you through raw material supply agreements, EV contract manufacturing, and joint ventures.",
+        "contact-ch1-title": "Corporate Headquarters",
+        "contact-ch1-desc": "18F Peito Tower, 501 Teheran-ro, Gangnam-gu, Seoul, Korea",
+        "contact-ch2-title": "Global Trading Desk",
+        "contact-ch3-title": "Business Email Inbox",
+        "form-label-name": "Full Name *",
+        "form-ph-name": "Enter your full name",
+        "form-label-company": "Company Name *",
+        "form-ph-company": "e.g., Peito Mobility",
+        "form-label-email": "Business Email *",
+        "form-label-type": "Target Division *",
+        "form-opt-select": "Please select",
+        "form-opt-mat": "Raw Materials Purchase (Gold, Al, Cu, Coal)",
+        "form-opt-auto": "Mobility / Automotive Partnership",
+        "form-opt-ir": "Investment & IR",
+        "form-opt-other": "Other Business Alliance",
+        "form-label-msg": "Inquiry Details *",
+        "form-ph-msg": "Please specify raw material specs or partnership proposal details. Our representative will contact you shortly.",
+        "form-btn-submit": "Send Proposal Request",
+        
+        // Success Modal
+        "modal-title": "Successfully Submitted",
+        "modal-desc": "Your partnership request has been securely sent to PEITO's Global Sales Division. A representative will contact you via email within 24 hours.",
+        "modal-btn-close": "Close",
+        
+        // Common Labels
+        "table-hdr-spec": "Grade / Spec",
+        "table-hdr-purity": "Purity",
+        "table-hdr-use": "Primary Application"
+    },
+    zh: {
+        "nav-group-about": "企业介绍",
+        "nav-company-intro": "公司概况",
+        "nav-group-materials": "原材料事业部",
+        "nav-gold": "黄金 (Au)",
+        "nav-aluminum": "铝材 (Al)",
+        "nav-copper": "铜材 (Cu)",
+        "nav-coal": "煤炭 (Coal)",
+        "nav-group-mobility": "智能出行",
+        "nav-automotive": "概念车展示",
+        "nav-group-partnership": "合作洽谈",
+        "nav-contact": "合作咨询",
+        "ticker-title": "原材料实时行情",
+        "trading-active": "全球贸易服务中",
+        "header-consult-btn": "合伙人在线咨询",
+        
+        // Intro Section
+        "hero-badge": "始于 2012",
+        "hero-title": "全球资源的创新与<br>未来移动出行的融合",
+        "hero-desc": "PEITO(贝托)依托全球资源贸易能力与专有硬件设计工程，创造了从原材料采购到未来出行制造的垂直一体化价值体系。",
+        "hero-btn-primary": "了解出行事业",
+        "hero-btn-secondary": "原材料事业部",
+        "core-value-title": "PEITO的核心业务优势",
+        "core-value-desc": "融合优质原材料与高科技硬件的多元化业务组合。",
+        "value-card1-title": "供应链领军优势",
+        "value-card1-desc": "稳定高效地供应黄金、铝、铜、煤炭等高科技制造与能源基建所需的核心资源。",
+        "value-card2-title": "自主研发未来出行",
+        "value-card2-desc": "将贝托超轻量化铝材与导电铜件完美融合，自主设计并制造新一代智能绿色汽车。",
+        "value-card3-title": "全球合作网络",
+        "value-card3-desc": "与全球各大矿业巨头及汽车制造品牌战略联盟，推动供应链多元化。",
+        "more-btn": "了解更多",
+        "stat-label-trade": "全球贸易额 (USD)",
+        "stat-label-network": "全球供应网络",
+        "stat-label-vol": "年原材料处理量",
+        "stat-label-purity": "材料纯度验证率",
+        
+        // Gold Section
+        "gold-media-caption": "贝托保修 999.9 精炼黄金",
+        "gold-cat-tag": "避险资产",
+        "gold-product-title": "实物黄金与高价值工业黄金贸易",
+        "gold-product-desc": "贝托安全供应优质金条以规避宏观经济风险。同时，我们保障高纯度金溅射靶材和微细键合线的供应链稳定。",
+        "gold-bullet1": "根据 LBMA 交割标准，保证供应 99.99% 的纯金条。",
+        "gold-bullet2": "与全球智能保险箱联动，提供全保安全存储服务。",
+        "gold-bullet3": "供应微细金键合线，用于提升车载电子器件的耐腐蚀性能。",
+        "gold-table-use1": "避险资产、银行准备金、实物投资",
+        "gold-table-use2": "半导体引线框架键合，细微布线",
+        "gold-table-use3": "显示器薄膜沉积，研究用涂层",
+        
+        // Aluminum Section
+        "al-cat-tag": "环保与轻量化",
+        "al-product-title": "未来工业的支柱：超轻高科技铝合金",
+        "al-product-desc": "我们加工并分销高性能铝合金，这是绿色能源时代结构轻量化的关键。我们的高拉伸强度铝板和挤压件构筑了电动汽车电池包和车辆底盘。",
+        "al-bullet1": "建立 6000 系列和 7000 系列航空级高强度合金产品线。",
+        "al-bullet2": "为 EV 电池包安全保护罩提供高热导率挤压型材。",
+        "al-bullet3": "推行低碳“绿色铝”，构建可持续发展的 ESG 供应链。",
+        "al-table-hdr-series": "合金系列",
+        "al-table-hdr-prop": "机械性能",
+        "al-table-prop1": "优良的成型性与耐蚀性",
+        "al-table-use1": "汽车外板、电动汽车电池箱",
+        "al-table-prop2": "超高抗拉强度和耐用性",
+        "al-table-use2": "飞机机身结构件、国防工业、保险杠横梁",
+        "al-table-prop3": "减少 75% 的碳足迹",
+        "al-table-use3": "IT 设备外壳、专注于 ESG 的车身框架",
+        
+        // Copper Section
+        "copper-media-caption": "高纯度无氧铜管及线圈",
+        "copper-cat-tag": "电气化核心",
+        "copper-product-title": "电动汽车革命与电网输电的神经网络",
+        "copper-product-desc": "铜是可再生能源电网和电动机驱动不可或缺的脉络。贝托在全球范围内协调 99.999% 无氧铜（OFC）和超薄铜箔的稳定供应。",
+        "copper-bullet1": "LME 注册 A 级电解铜阴极的全球大宗贸易。",
+        "copper-bullet2": "采购用于锂离子电池负极集电体的纳米级精密铜箔。",
+        "copper-bullet3": "为电网输电线和工业变压器生产电工铜杆。",
+        "copper-table-hdr-material": "材料名称",
+        "copper-table-hdr-cond": "导电率 (IACS)",
+        "copper-table-hdr-spec": "特殊规格与应用",
+        "copper-table-use1": "EV 驱动电机发卡绕组、高保真音频线",
+        "copper-table-use2": "LME A级电解铜阴极、拉丝原材料",
+        "copper-table-cond3": "高强度/高延伸率",
+        "copper-table-use3": "锂电池负极集电箔 (4.5~8μm厚度)",
+        
+        // Coal Section
+        "coal-media-caption": "贝托大宗码头卸下的高发热量煤炭",
+        "coal-cat-tag": "工业能源",
+        "coal-product-title": "工业动力能源：高效清洁煤炭贸易",
+        "coal-product-desc": "我们在亚太地区供应炼焦煤和高发热量动力煤，这对钢铁制造和发电至关重要。贝托确保执行严格的环保低杂质标准。",
+        "coal-bullet1": "直接进口用于炼焦原料的高品质硬焦煤。",
+        "coal-bullet2": "供应低硫、低氮的清洁无烟煤，以促进碳捕集与封存。",
+        "coal-bullet3": "提供干散货海运和实时海上物流运输的可视化跟踪服务。",
+        "coal-table-hdr-type": "煤炭种类",
+        "coal-table-hdr-cal": "发热量",
+        "coal-table-hdr-prop": "成分特征 / 特点",
+        "coal-table-cal1": "冶金优质煤",
+        "coal-table-prop1": "低灰分 (< 9.5%), 低硫, 高结焦性",
+        "coal-table-prop2": "低灰分、高发热量、发电专用动力煤",
+        "coal-table-cal3": "7,500 kcal/kg 以上",
+        "coal-table-prop3": "高等级无烟煤、炼钢增碳剂、特殊化工原料",
+        
+        // Automotive Section
+        "auto-badge": "贝托汽车事业部",
+        "auto-hero-desc": "融合了贝托超轻铝合金车身和高效率绕组电机的下一代豪华 GT 跑车概念车。",
+        "auto-grid-title": "核心出行方案",
+        "auto-grid-desc": "融合优质原材料与先进硬件工程的贝托汽车独特优势。",
+        "auto-tech1-title": "800V 超高压电池包",
+        "auto-tech1-desc": "采用贝托精加工铝壳和高导电铜箔，具有优异的热稳定性，18分钟内即可将电量从10%充至80%。",
+        "auto-tech2-title": "智能自动驾驶",
+        "auto-tech2-desc": "将 12 个激光雷达/雷达传感器与车载 AI 处理器集成，安全实现 L3+ 级高速巡航自动驾驶。",
+        "auto-tech3-title": "铝合金承载式车身",
+        "auto-tech3-desc": "采用 7000 系列高硬度铝合金的一体化压铸件，相比传统钢车身减重 30%，大幅提高能效。",
+        "auto-perf-val1": "2.8秒",
+        "auto-perf-lbl1": "0-100 km/h 加速时间",
+        "auto-perf-lbl2": "单次充电续航里程 (WLTP)",
+        "auto-perf-val3": "720 马力",
+        "auto-perf-lbl3": "最大输出功率 (双电机合算)",
+        
+        // Contact Section
+        "contact-info-title": "PEITO 商务<br>合作及咨询",
+        "contact-info-desc": "我们的全球战略团队将为您解答原材料大宗采购、电动车代工制造及合资企业合作等问题。",
+        "contact-ch1-title": "集团总部",
+        "contact-ch1-desc": "韩国首尔特别市江南区德黑兰路 501 贝托大厦 18F",
+        "contact-ch2-title": "全球贸易服务台",
+        "contact-ch3-title": "商务咨询邮箱",
+        "form-label-name": "姓名 *",
+        "form-ph-name": "请输入您的姓名",
+        "form-label-company": "公司名称 *",
+        "form-ph-company": "例如：贝托出行",
+        "form-label-email": "电子邮箱 *",
+        "form-label-type": "咨询部门 *",
+        "form-opt-select": "请选择",
+        "form-opt-mat": "原材料采购 (黄金, 铝, 铜, 煤炭)",
+        "form-opt-auto": "智能出行 / 汽车业务合作",
+        "form-opt-ir": "投资及IR咨询",
+        "form-opt-other": "其他业务合作",
+        "form-label-msg": "咨询详情 *",
+        "form-ph-msg": "请写明具体的原材料规格或合作建议详情。我们的代表将尽快与您联系。",
+        "form-btn-submit": "提交合作意向书",
+        
+        // Success Modal
+        "modal-title": "提交成功",
+        "modal-desc": "您的合作咨询已被安全发送至 PEITO 环球销售事业部。代表将在 24 小时内通过电子邮件与您联系。",
+        "modal-btn-close": "确认",
+        
+        // Common Labels
+        "table-hdr-spec": "等级规格",
+        "table-hdr-purity": "纯度",
+        "table-hdr-use": "主要应用"
+    }
+};
+
+let currentLanguage = 'ko';
+
 // Navigation Control
 function showSection(sectionId) {
     // Hide all sections with animation reset
@@ -25,31 +469,34 @@ function showSection(sectionId) {
         activeNav.classList.add('active');
     }
     
-    // Set Header Breadcrumb and Section Title
-    let displayTitle = '회사 개요';
+    // Set Header Breadcrumb and Section Title (with multilingual translation)
+    let displayTitle = '';
+    const isKo = currentLanguage === 'ko';
+    const isZh = currentLanguage === 'zh';
+    
     switch (sectionId) {
         case 'company-intro':
-            displayTitle = '회사 개요';
+            displayTitle = isKo ? '회사 개요' : (isZh ? '公司概况' : 'Overview');
             // Trigger Counter Animation again when entering intro
             initCounters();
             break;
         case 'materials-gold':
-            displayTitle = '원자재 > 금 (Gold)';
+            displayTitle = isKo ? '원자재 > 금 (Gold)' : (isZh ? '原材料 > 黄金' : 'Raw Materials > Gold');
             break;
         case 'materials-aluminum':
-            displayTitle = '원자재 > 알루미늄 (Aluminum)';
+            displayTitle = isKo ? '원자재 > 알루미늄 (Aluminum)' : (isZh ? '原材料 > 铝材' : 'Raw Materials > Aluminum');
             break;
         case 'materials-copper':
-            displayTitle = '원자재 > 구리 (Copper)';
+            displayTitle = isKo ? '원자재 > 구리 (Copper)' : (isZh ? '原材料 > 铜材' : 'Raw Materials > Copper');
             break;
         case 'materials-coal':
-            displayTitle = '원자재 > 석탄 (Coal)';
+            displayTitle = isKo ? '원자재 > 석탄 (Coal)' : (isZh ? '原材料 > 煤炭' : 'Raw Materials > Coal');
             break;
         case 'automotive':
-            displayTitle = '모빌리티 > 자동차 쇼케이스';
+            displayTitle = isKo ? '모빌리티 > 자동차 쇼케이스' : (isZh ? '出行事业 > 概念车' : 'Mobility > Concept EV');
             break;
         case 'contact':
-            displayTitle = '파트너십 > 협력 문의';
+            displayTitle = isKo ? '파트너십 > 협력 문의' : (isZh ? '合作伙伴 > 咨询' : 'Partnership > Inquiries');
             break;
     }
     document.getElementById('current-page-title').innerText = displayTitle;
@@ -61,7 +508,45 @@ function showSection(sectionId) {
     }
 }
 
-// Live Commodity Ticker Simulator (WOW Factor)
+// Language Toggle Logic
+function changeLanguage(lang) {
+    currentLanguage = lang;
+    
+    // Update HTML lang attribute
+    document.documentElement.lang = lang;
+    
+    // Manage language select button active states
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.getAttribute('data-lang') === lang) {
+            btn.classList.add('active');
+        }
+    });
+    
+    // Update all translatable elements
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (i18n[lang] && i18n[lang][key]) {
+            el.innerHTML = i18n[lang][key];
+        }
+    });
+    
+    // Update dynamic placeholder elements
+    document.querySelectorAll('[data-placeholder]').forEach(el => {
+        const phKey = el.getAttribute('data-placeholder');
+        if (i18n[lang] && i18n[lang][phKey]) {
+            el.placeholder = i18n[lang][phKey];
+        }
+    });
+    
+    // Redraw current section's header title
+    const activeSection = document.querySelector('.content-section.active');
+    if (activeSection) {
+        showSection(activeSection.id);
+    }
+}
+
+// Live Commodity Ticker Simulator
 const tickerData = {
     gold: { price: 2410.50, change: 1.24 },
     al: { price: 2530.00, change: -0.45 },
@@ -138,12 +623,15 @@ function initCounters() {
                 clearInterval(timer);
             } else {
                 let displayVal = '';
+                const isEn = currentLanguage === 'en';
+                const isZh = currentLanguage === 'zh';
+                
                 if (hasTextPlus && !hasTextTon) {
                     displayVal = `${start.toFixed(1)}B+`;
                 } else if (hasTextTon) {
-                    displayVal = `${Math.round(start).toLocaleString()}톤+`;
+                    displayVal = isEn ? `${Math.round(start).toLocaleString()} Tons+` : (isZh ? `${Math.round(start).toLocaleString()}吨+` : `${Math.round(start).toLocaleString()}톤+`);
                 } else if (hasTextGae) {
-                    displayVal = `${Math.round(start)}개국`;
+                    displayVal = isEn ? `${Math.round(start)} Countries` : (isZh ? `${Math.round(start)}个国家` : `${Math.round(start)}개국`);
                 } else if (hasTextPercent) {
                     displayVal = `${start.toFixed(1)}%`;
                 } else {
@@ -163,7 +651,10 @@ function handleContactSubmit(event) {
     const submitBtn = document.querySelector('.submit-btn');
     const originalContent = submitBtn.innerHTML;
     submitBtn.disabled = true;
-    submitBtn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> 전송 중...';
+    
+    const isEn = currentLanguage === 'en';
+    const isZh = currentLanguage === 'zh';
+    submitBtn.innerHTML = isEn ? '<i class="fa-solid fa-circle-notch fa-spin"></i> Submitting...' : (isZh ? '<i class="fa-solid fa-circle-notch fa-spin"></i> 发送中...' : '<i class="fa-solid fa-circle-notch fa-spin"></i> 전송 중...');
     
     setTimeout(() => {
         // Show success modal

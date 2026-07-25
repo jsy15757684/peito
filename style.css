@@ -104,16 +104,21 @@ body::before {
     font-weight: 900;
     letter-spacing: -0.03em;
     cursor: pointer;
+    margin-bottom: 1.25rem;
+    padding-left: 0.5rem;
+    color: var(--text-primary);
+}
+
+.logo span {
     background: var(--accent-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 1.25rem;
-    padding-left: 0.5rem;
 }
 
 .logo i {
     font-size: 1.5rem;
-    filter: drop-shadow(0 0 8px rgba(96, 165, 250, 0.5));
+    color: #00e5ff;
+    filter: drop-shadow(0 0 8px rgba(0, 229, 255, 0.6));
 }
 
 .nav-group-title {

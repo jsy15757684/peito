@@ -500,7 +500,7 @@ function showSection(sectionId) {
             displayTitle = isKo ? '원자재 > 석탄 (Coal)' : (isCh ? '原材料 > 煤炭' : 'Raw Materials > Coal');
             break;
         case 'automotive':
-            displayTitle = isKo ? '모빌리티 > 자동차 쇼케이스' : (isCh ? '出行事业 > 概念车' : 'Mobility > Concept EV');
+            displayTitle = isKo ? '중국 수입차 유통' : (isCh ? '中国进口车分销' : 'China Car Distribution');
             break;
         case 'contact':
             displayTitle = isKo ? '파트너십 > 협력 문의' : (isCh ? '合作伙伴 > 咨询' : 'Partnership > Inquiries');

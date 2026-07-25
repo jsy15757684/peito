@@ -49,6 +49,7 @@ const i18n = {
         "gold-table-use3": "디스플레이 박막 증착, 연구용 코팅",
         
         // Aluminum Section
+        "al-media-caption": "페이또 글로벌 터미널의 알루미늄 자재 하역 공정",
         "al-cat-tag": "Eco & Lightweight",
         "al-product-title": "미래 산업의 뼈대, 초경량 하이테크 알루미늄",
         "al-product-desc": "환경 규제와 친환경 에너지 시대의 핵심인 '경량화'를 위한 고성능 알루미늄 합금을 가공 및 유통합니다. 페이또의 고인장 알루미늄 프레스 플레이트와 고압 다이캐스팅 압출재는 배터리 팩 케이스와 미래 모빌리티 섀시의 구조적 핵심을 구성합니다.",
@@ -195,6 +196,7 @@ const i18n = {
         "gold-table-use3": "Display thin film deposition, research coating",
         
         // Aluminum Section
+        "al-media-caption": "PEITO Global Terminal Aluminum Material Unloading Process",
         "al-cat-tag": "Eco & Lightweight",
         "al-product-title": "Futuristic Ultra-Lightweight Aluminum Alloys",
         "al-product-desc": "We process and distribute high-performance aluminum alloys essential for lightweight structures in the eco-friendly energy era. Our high-tensile plates and extrusions construct EV battery packs and vehicle chassis.",
@@ -341,6 +343,7 @@ const i18n = {
         "gold-table-use3": "显示器薄膜沉积，研究用涂层",
         
         // Aluminum Section
+        "al-media-caption": "贝托全球码头的铝材装卸过程",
         "al-cat-tag": "环保与轻量化",
         "al-product-title": "未来工业的支柱：超轻高科技铝合金",
         "al-product-desc": "我们加工并分销高性能铝合金，这是绿色能源时代结构轻量化的关键。我们的高拉伸强度铝板和挤压件构筑了电动汽车电池包和车辆底盘。",

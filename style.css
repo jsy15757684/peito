@@ -269,15 +269,7 @@ nav li.active {
     margin-top: 1.5rem;
 }
 
-.sidebar-footer {
-    margin-top: 0.75rem;
-    margin-bottom: 0.5rem;
-    font-size: 0.62rem;
-    color: var(--text-secondary);
-    opacity: 0.4;
-    padding-left: 0.5rem;
-    font-weight: 500;
-}
+
 
 .status-indicator .dot {
     width: 8px;
@@ -1291,5 +1283,80 @@ nav li.active {
     .lang-btn {
         padding: 0.25rem 0.5rem;
         font-size: 0.7rem;
+    }
+}
+
+/* Global Footer styling */
+.main-footer {
+    margin-top: 4rem;
+    padding: 2rem 1.5rem;
+    border-top: 1px solid var(--border-color);
+    background: rgba(15, 23, 42, 0.4);
+    border-radius: 1.25rem;
+    transition: all 0.3s var(--transition-smooth);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    font-size: 1.25rem;
+    font-weight: 900;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.02em;
+}
+
+.footer-address {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    opacity: 0.85;
+}
+
+.footer-copyright {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    opacity: 0.5;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s var(--transition-smooth);
+}
+
+.footer-links a:hover {
+    color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
+    }
+    .footer-links {
+        gap: 1rem;
+        flex-wrap: wrap;
     }
 }

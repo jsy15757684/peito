@@ -14,6 +14,7 @@ const i18n = {
         "nav-contact": "협력 문의",
         "ticker-title": "원자재 실시간 시세",
         "trading-active": "Global Trading Active",
+        "copyright": "© 2026 PEITO Co., Ltd. All rights reserved.",
         "header-consult-btn": "파트너 실시간 상담",
         
         // Intro Section
@@ -163,6 +164,7 @@ const i18n = {
         "nav-contact": "Contact Us",
         "ticker-title": "Live Commodity Price",
         "trading-active": "Global Trading Active",
+        "copyright": "© 2026 PEITO Co., Ltd. All rights reserved.",
         "header-consult-btn": "Live Consultation",
         
         // Intro Section
@@ -312,6 +314,7 @@ const i18n = {
         "nav-contact": "合作咨询",
         "ticker-title": "原材料实时行情",
         "trading-active": "全球贸易服务中",
+        "copyright": "© 2026 PEITO Co., Ltd. 保留所有权利。",
         "header-consult-btn": "合伙人在线咨询",
         
         // Intro Section

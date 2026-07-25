@@ -1,17 +1,17 @@
 :root {
-    --bg-color: #f8fafc;
-    --sidebar-bg: rgba(255, 255, 255, 0.85);
-    --card-bg: rgba(255, 255, 255, 0.8);
-    --card-hover-bg: rgba(255, 255, 255, 0.95);
-    --accent-color: #2563eb;
-    --accent-secondary: #7c3aed;
-    --accent-gradient: linear-gradient(135deg, #2563eb 0%, #7c3aed 50%, #0891b2 100%);
-    --text-primary: #0f172a;
-    --text-secondary: #334155;
-    --border-color: rgba(15, 23, 42, 0.08);
-    --border-glow: rgba(37, 99, 235, 0.15);
+    --bg-color: #030712;
+    --sidebar-bg: rgba(15, 23, 42, 0.75);
+    --card-bg: rgba(255, 255, 255, 0.02);
+    --card-hover-bg: rgba(255, 255, 255, 0.06);
+    --accent-color: #60a5fa;
+    --accent-secondary: #c084fc;
+    --accent-gradient: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #06b6d4 100%);
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --border-color: rgba(255, 255, 255, 0.06);
+    --border-glow: rgba(96, 165, 250, 0.15);
     --glass-blur: blur(24px);
-    --shadow-lg: 0 20px 40px rgba(15, 23, 42, 0.05), 0 1px 3px rgba(15, 23, 42, 0.02);
+    --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.5);
     --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
     --transition-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
@@ -41,9 +41,9 @@ body::before {
     right: 0;
     bottom: 0;
     background: 
-        radial-gradient(ellipse 70% 60% at 15% 15%, rgba(59, 130, 246, 0.12) 0%, transparent 60%),
-        radial-gradient(ellipse 50% 50% at 85% 80%, rgba(139, 92, 246, 0.08) 0%, transparent 50%),
-        radial-gradient(ellipse 60% 40% at 50% 50%, rgba(6, 182, 212, 0.06) 0%, transparent 50%);
+        radial-gradient(ellipse 70% 60% at 15% 15%, rgba(96, 165, 250, 0.15) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 50% at 85% 80%, rgba(192, 132, 252, 0.1) 0%, transparent 50%),
+        radial-gradient(ellipse 60% 40% at 50% 50%, rgba(6, 182, 212, 0.05) 0%, transparent 50%);
     z-index: 0;
     pointer-events: none;
     animation: aurora-flow 25s ease-in-out infinite alternate;
@@ -93,7 +93,7 @@ body::before {
 
 .logo i {
     font-size: 1.5rem;
-    filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.3));
+    filter: drop-shadow(0 0 8px rgba(96, 165, 250, 0.5));
 }
 
 .nav-group-title {
@@ -102,7 +102,7 @@ body::before {
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--text-secondary);
-    opacity: 0.85;
+    opacity: 0.5;
     margin: 1.5rem 0 0.5rem 0.75rem;
 }
 
@@ -139,14 +139,14 @@ nav li:hover {
     background: var(--card-hover-bg);
     color: var(--text-primary);
     transform: translateX(6px);
-    border-color: rgba(15, 23, 42, 0.04);
+    border-color: rgba(255, 255, 255, 0.05);
 }
 
 nav li.active {
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.12) 0%, rgba(139, 92, 246, 0.08) 100%);
-    color: var(--accent-color);
-    border-color: rgba(59, 130, 246, 0.2);
-    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.08);
+    background: linear-gradient(135deg, rgba(96, 165, 250, 0.2) 0%, rgba(192, 132, 252, 0.15) 100%);
+    color: var(--text-primary);
+    border-color: rgba(96, 165, 250, 0.3);
+    box-shadow: 0 4px 20px rgba(96, 165, 250, 0.15);
     font-weight: 700;
 }
 
@@ -161,8 +161,8 @@ nav li.active {
 }
 
 .hover-glow:hover {
-    border-color: rgba(59, 130, 246, 0.25);
-    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.04), 0 0 25px rgba(59, 130, 246, 0.06);
+    border-color: rgba(96, 165, 250, 0.35);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 0 25px rgba(96, 165, 250, 0.08);
     background: var(--card-hover-bg);
     transform: translateY(-6px) scale(1.015);
     cursor: pointer;
@@ -263,7 +263,7 @@ nav li.active {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgba(248, 250, 252, 0.65);
+    background: rgba(3, 7, 18, 0.5);
     backdrop-filter: var(--glass-blur);
     -webkit-backdrop-filter: var(--glass-blur);
     z-index: 5;
@@ -293,8 +293,8 @@ nav li.active {
 }
 
 .quote-btn {
-    background: linear-gradient(135deg, rgba(37, 99, 235, 0.12) 0%, rgba(124, 58, 237, 0.08) 100%);
-    border: 1px solid rgba(37, 99, 235, 0.35);
+    background: linear-gradient(135deg, rgba(96, 165, 250, 0.15) 0%, rgba(192, 132, 252, 0.1) 100%);
+    border: 1px solid rgba(96, 165, 250, 0.4);
     color: var(--text-primary);
     padding: 0.6rem 1.25rem;
     border-radius: 2.5rem;
@@ -308,8 +308,8 @@ nav li.active {
 }
 
 .quote-btn:hover {
-    border-color: rgba(37, 99, 235, 0.7);
-    box-shadow: 0 0 15px rgba(37, 99, 235, 0.15);
+    border-color: rgba(96, 165, 250, 0.8);
+    box-shadow: 0 0 15px rgba(96, 165, 250, 0.2);
     transform: translateY(-1px);
 }
 
@@ -329,11 +329,11 @@ nav li.active {
     background: transparent;
 }
 .scroll-container::-webkit-scrollbar-thumb {
-    background: rgba(15, 23, 42, 0.08);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 3px;
 }
 .scroll-container::-webkit-scrollbar-thumb:hover {
-    background: rgba(15, 23, 42, 0.15);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 /* Section Common */
@@ -378,7 +378,7 @@ nav li.active {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(90deg, rgba(241, 245, 249, 0.95) 30%, rgba(241, 245, 249, 0.4) 100%);
+    background: linear-gradient(90deg, rgba(3, 7, 18, 0.95) 30%, rgba(3, 7, 18, 0.3) 100%);
     z-index: 1;
 }
 
@@ -389,9 +389,9 @@ nav li.active {
 }
 
 .hero-text-wrap .badge {
-    background: rgba(59, 130, 246, 0.1);
-    border: 1px solid rgba(59, 130, 246, 0.2);
-    color: var(--accent-color);
+    background: rgba(96, 165, 250, 0.2);
+    border: 1px solid rgba(96, 165, 250, 0.4);
+    color: #93c5fd;
     padding: 0.35rem 0.85rem;
     border-radius: 2rem;
     font-size: 0.75rem;
@@ -440,8 +440,8 @@ nav li.active {
 }
 
 .secondary-btn {
-    background: rgba(255, 255, 255, 0.7);
-    border: 1px solid rgba(15, 23, 42, 0.12);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
     color: var(--text-primary);
     padding: 0.8rem 1.8rem;
     border-radius: 2.5rem;
@@ -452,8 +452,8 @@ nav li.active {
 }
 
 .secondary-btn:hover {
-    background: rgba(255, 255, 255, 0.9);
-    border-color: rgba(15, 23, 42, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Grid & Layout Utilities */
@@ -680,7 +680,7 @@ nav li.active {
 
 .specs-table td {
     padding: 0.75rem;
-    border-bottom: 1px solid rgba(15, 23, 42, 0.04);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
     color: var(--text-primary);
 }
 
@@ -864,8 +864,8 @@ nav li.active {
 .channel-item i {
     width: 40px;
     height: 40px;
-    background: rgba(59, 130, 246, 0.15);
-    border: 1px solid rgba(59, 130, 246, 0.25);
+    background: rgba(96, 165, 250, 0.15);
+    border: 1px solid rgba(96, 165, 250, 0.3);
     color: var(--accent-color);
     border-radius: 12px;
     display: flex;
@@ -916,8 +916,8 @@ nav li.active {
 .form-group input, 
 .form-group select, 
 .form-group textarea {
-    background: rgba(255, 255, 255, 0.5);
-    border: 1px solid rgba(15, 23, 42, 0.08);
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--border-color);
     border-radius: 0.85rem;
     padding: 0.8rem 1rem;
     color: var(--text-primary);
@@ -930,13 +930,13 @@ nav li.active {
 .form-group input:focus, 
 .form-group select:focus, 
 .form-group textarea:focus {
-    border-color: rgba(59, 130, 246, 0.5);
-    box-shadow: 0 0 12px rgba(59, 130, 246, 0.1);
-    background: rgba(255, 255, 255, 0.8);
+    border-color: rgba(96, 165, 250, 0.6);
+    box-shadow: 0 0 12px rgba(96, 165, 250, 0.15);
+    background: rgba(0, 0, 0, 0.35);
 }
 
 .form-group select option {
-    background-color: #ffffff;
+    background-color: #0c1017;
     color: var(--text-primary);
 }
 
@@ -970,8 +970,8 @@ nav li.active {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(15, 23, 42, 0.35);
-    backdrop-filter: blur(12px);
+    background: rgba(4, 6, 10, 0.8);
+    backdrop-filter: blur(8px);
     z-index: 100;
     display: flex;
     align-items: center;

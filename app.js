@@ -571,20 +571,13 @@ function updateTickerWidgets() {
             const changeSign = current.change >= 0 ? '+' : '';
             const changeStr = `${changeSign}${current.change.toFixed(2)}%`;
             
-            // Update widget UI
-            if (commodity === 'gold') {
-                const el = document.getElementById('ticker-gold');
-                if (el) {
-                    el.querySelector('.value').innerText = priceStr;
-                    const changeEl = el.querySelector('.change');
-                    changeEl.innerText = changeStr;
-                    changeEl.className = `change ${current.change >= 0 ? 'positive' : 'negative'}`;
-                }
-            } else if (commodity === 'al') {
-                const el = document.getElementById('ticker-al');
-                if (el) {
-                    el.querySelector('.value').innerText = priceStr;
-                    const changeEl = el.querySelector('.change');
+            // Update widget UI (generalized for all commodities)
+            const el = document.getElementById(`ticker-${commodity}`);
+            if (el) {
+                const valueEl = el.querySelector('.value');
+                if (valueEl) valueEl.innerText = priceStr;
+                const changeEl = el.querySelector('.change');
+                if (changeEl) {
                     changeEl.innerText = changeStr;
                     changeEl.className = `change ${current.change >= 0 ? 'positive' : 'negative'}`;
                 }

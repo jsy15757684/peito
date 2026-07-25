@@ -70,7 +70,7 @@ body::before {
     backdrop-filter: var(--glass-blur);
     -webkit-backdrop-filter: var(--glass-blur);
     border-right: 1px solid var(--border-color);
-    padding: 2.5rem 1.5rem;
+    padding: 1.5rem 1.25rem;
     display: flex;
     flex-direction: column;
     z-index: 10;
@@ -87,7 +87,7 @@ body::before {
     background: var(--accent-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.25rem;
     padding-left: 0.5rem;
 }
 
@@ -103,7 +103,7 @@ body::before {
     text-transform: uppercase;
     color: var(--text-secondary);
     opacity: 0.5;
-    margin: 1.5rem 0 0.5rem 0.75rem;
+    margin: 1rem 0 0.4rem 0.5rem;
 }
 
 .nav-group-title:first-of-type {
@@ -115,7 +115,7 @@ nav ul {
 }
 
 nav li {
-    padding: 0.85rem 1rem;
+    padding: 0.65rem 0.85rem;
     border-radius: 1rem;
     cursor: pointer;
     display: flex;
@@ -125,7 +125,7 @@ nav li {
     font-size: 0.92rem;
     font-weight: 600;
     transition: all 0.35s var(--transition-spring);
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.15rem;
     border: 1px solid transparent;
 }
 
@@ -201,45 +201,39 @@ nav li.active {
 }
 
 .ticker-body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
 }
 
 .ticker-item {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.15rem;
-    font-size: 0.75rem;
-    padding: 0.6rem 0.75rem;
-    background: rgba(255, 255, 255, 0.015);
-    border: 1px solid rgba(255, 255, 255, 0.04);
-    border-radius: 0.75rem;
-    transition: all 0.3s var(--transition-smooth);
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.78rem;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
 }
 
-.ticker-item:hover {
-    background: rgba(255, 255, 255, 0.03);
-    border-color: rgba(96, 165, 250, 0.2);
+.ticker-item:last-child {
+    border-bottom: none;
 }
 
 .ticker-item .label {
-    font-size: 0.65rem;
+    font-size: 0.78rem;
     font-weight: 700;
-    color: var(--text-secondary);
-    opacity: 0.8;
+    color: var(--text-primary);
 }
 
 .ticker-item .value {
-    font-size: 0.85rem;
-    font-weight: 800;
+    font-size: 0.78rem;
+    font-weight: 700;
     color: var(--text-primary);
 }
 
 .ticker-item .change {
-    font-size: 0.7rem;
-    font-weight: 700;
+    font-size: 0.75rem;
+    font-weight: 600;
 }
 
 .ticker-item .change.positive { color: #4ade80; }

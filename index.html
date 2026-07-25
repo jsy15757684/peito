@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PEITO 페이또 | 글로벌 원자재 & 미래 모빌리티 리더</title>
-    <meta name="description" content="페이또(PEITO)는 금, 알루미늄, 구리, 석탄 등 핵심 원자재의 글로벌 트레이딩과 미래 첨단 친환경 모빌리티 개발을 선도하는 혁신 기업입니다.">
-    <link rel="stylesheet" href="style.css?v=5">
+    <title>PAYTTO 페이또 | 글로벌 원자재 & 미래 모빌리티 리더</title>
+    <meta name="description" content="페이또(PAYTTO)는 금, 알루미늄, 구리, 석탄 등 핵심 원자재의 글로벌 트레이딩과 미래 첨단 친환경 모빌리티 개발을 선도하는 혁신 기업입니다.">
+    <link rel="stylesheet" href="style.css?v=6">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
@@ -15,7 +15,7 @@
         <aside class="sidebar">
             <div class="logo" onclick="showSection('company-intro')">
                 <i class="fa-solid fa-gem glow-icon"></i>
-                <span>PEITO</span>
+                <span>PAYTTO</span>
             </div>
             <nav>
                 <div class="nav-group-title" data-i18n="nav-group-about">기업 소개</div>
@@ -36,13 +36,22 @@
                         <i class="fa-solid fa-plug" style="color: #ff7f50;"></i> <span data-i18n="nav-copper">구리 (Copper)</span>
                     </li>
                     <li id="nav-materials-coal" onclick="showSection('materials-coal')">
-                        <i class="fa-solid fa-fire-flame-simple" style="color: #555555;"></i> <span data-i18n="nav-coal">석탄 (Coal)</span>
+                        <i class="fa-solid fa-fire-flame-simple" style="color: #888888;"></i> <span data-i18n="nav-coal">석탄 (Coal)</span>
+                    </li>
+                    <li id="nav-materials-oil" onclick="showSection('materials-oil')">
+                        <i class="fa-solid fa-oil-well" style="color: #38bdf8;"></i> <span>원유 (Crude Oil)</span>
                     </li>
                 </ul>
                 <div class="nav-group-title" data-i18n="nav-group-mobility">모빌리티 사업부</div>
                 <ul>
                     <li id="nav-automotive" onclick="showSection('automotive')">
                         <i class="fa-solid fa-car-side" style="color: #00e5ff;"></i> <span data-i18n="nav-automotive">중국 수입차 유통</span>
+                    </li>
+                </ul>
+                <div class="nav-group-title" data-i18n="nav-group-energy">신사업 & 미래 기술</div>
+                <ul>
+                    <li id="nav-energy-special" onclick="showSection('energy-special')">
+                        <i class="fa-solid fa-bolt" style="color: #a855f7;"></i> <span data-i18n="nav-energy-special">에너지 & 특수 모빌리티</span>
                     </li>
                 </ul>
                 <div class="nav-group-title" data-i18n="nav-group-partnership">파트너십</div>
@@ -93,7 +102,7 @@
         <main class="main-content">
             <header class="main-header">
                 <div class="breadcrumb">
-                    <span class="root-path">PEITO Global</span>
+                    <span class="root-path">PAYTTO Global</span>
                     <i class="fa-solid fa-chevron-right separator"></i>
                     <span id="current-page-title" class="current-path" data-i18n="nav-company-intro">회사 개요</span>
                 </div>
@@ -116,13 +125,47 @@
                     <div class="hero-banner glass-card">
                         <div class="hero-overlay"></div>
                         <div class="hero-text-wrap">
-                            <span class="badge" data-i18n="hero-badge">EST. 2012</span>
+                            <span class="badge" data-i18n="hero-badge">EST. 2013</span>
                             <h2 data-i18n="hero-title">글로벌 자원의 혁신과<br>미래 모빌리티의 융합</h2>
-                            <p data-i18n="hero-desc">페이또(PEITO)는 천연 원자재 트레이딩 역량과 독자적인 하드웨어 설계 능력을 바탕으로, 원자재 조달부터 미래형 모빌리티 제조까지 수직계열화된 가치를 창출하는 혁신 기업입니다.</p>
+                            <p data-i18n="hero-desc">페이또(PAYTTO)는 천연 원자재 트레이딩 역량과 독자적인 하드웨어 설계 능력을 바탕으로, 원자재 조달부터 미래형 모빌리티 제조까지 수직계열화된 가치를 창출하는 혁신 기업입니다.</p>
                             <div class="hero-buttons">
                                 <button class="primary-btn" onclick="showSection('automotive')" data-i18n="hero-btn-primary">모빌리티 알아보기</button>
                                 <button class="secondary-btn" onclick="showSection('materials-gold')" data-i18n="hero-btn-secondary">원자재 사업부</button>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- CEO Vision Card -->
+                    <div class="ceo-card glass-card margin-top-md">
+                        <div class="ceo-info">
+                            <span class="sub-badge" data-i18n="ceo-title">대표이사 인사말</span>
+                            <h3 data-i18n="ceo-quote">“Green Mobility, Vision for Future”</h3>
+                            <p data-i18n="ceo-desc">페이또는 2013년 설립 이래 한중 친환경 무역의 교두보이자 고성능 모빌리티, 신재생 에너지, 원자재 트레이딩 및 자원 순환 시스템을 선도하는 글로벌 산업 솔루션 기업입니다.</p>
+                            <span class="ceo-signature" data-i18n="ceo-name">CEO 양기웅 (Kiwoong Yang)</span>
+                        </div>
+                    </div>
+
+                    <!-- Subsidiaries Grid -->
+                    <div class="section-title-wrap">
+                        <h3 data-i18n="subsidiary-title">페이또 그룹 주요 자회사</h3>
+                        <p data-i18n="subsidiary-desc">수입차 유통, 이커머스, A/S 네트워크 및 모빌리티 컨설팅을 전개하는 페이또의 핵심 자회사 생태계입니다.</p>
+                    </div>
+                    <div class="subsidiary-grid">
+                        <div class="sub-card glass-card">
+                            <span class="sub-name">LUXION GLOBAL MOTORS</span>
+                            <p class="sub-detail">벤츠, 포드 등 완성차 브랜딩 및 해외 세일즈</p>
+                        </div>
+                        <div class="sub-card glass-card">
+                            <span class="sub-name">HAWTAIKOREA MOTORS</span>
+                            <p class="sub-detail">수입 자동차 독점 유통 및 이커머스 사업</p>
+                        </div>
+                        <div class="sub-card glass-card">
+                            <span class="sub-name">ENU (이앤유)</span>
+                            <p class="sub-detail">라이브 커머스 & 온라인 글로벌 판매 플랫폼</p>
+                        </div>
+                        <div class="sub-card glass-card">
+                            <span class="sub-name">SRGC After Service</span>
+                            <p class="sub-detail">전국 공인 서비스 네트워크 및 딜러망 A/S</p>
                         </div>
                     </div>
 
@@ -410,6 +453,33 @@
                     </div>
                 </section>
 
+                <!-- Section 5-2: Materials - Crude Oil -->
+                <section id="materials-oil" class="content-section" style="display: none;">
+                    <div class="product-showcase">
+                        <div class="product-info">
+                            <span class="category-tag oil-tag" data-i18n="oil-cat-tag">Energy & Resources</span>
+                            <h2 data-i18n="oil-product-title">글로벌 에너지 트레이딩, 원유 (Crude Oil)</h2>
+                            <p class="description" data-i18n="oil-product-desc">글로벌 공급망 네트워크를 기반으로 월 100,000톤 이상의 원유 및 석유계 원자재를 안정적으로 수급 및 유통합니다.</p>
+                            <span class="volume-badge" data-i18n="oil-volume">월 100,000톤 (연 120만 톤)</span>
+                            
+                            <div class="feature-bullets margin-top-sm">
+                                <div class="bullet-item">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>중동 및 중남미 산유국 직거래 유통 파이프라인 및 초대형 원유운반선(VLCC) 물류 인프라 연계</span>
+                                </div>
+                                <div class="bullet-item">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>석유화학 정제용 저유황 원유 및 정제 연료유의 국제 시세 연동 안정적 수급 구조</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-media">
+                            <img src="images/car_distribution.jpg" alt="원유 트레이딩 항만 물류" class="showcase-img">
+                            <div class="img-caption">페이또 원유 정제 및 유통 전용 터미널 레인</div>
+                        </div>
+                    </div>
+                </section>
+
                 <!-- Section 6: Chinese Car Distribution -->
                 <section id="automotive" class="content-section" style="display: none;">
                     <!-- Auto Hero Segment -->
@@ -417,8 +487,8 @@
                         <img src="images/car_distribution.jpg" alt="페이또 중국 수입차 유통 물류" class="auto-hero-img">
                         <div class="auto-hero-overlay"></div>
                         <div class="auto-hero-text">
-                            <span class="badge auto-badge" data-i18n="auto-badge">PEITO AUTO LOGISTICS</span>
-                            <h2 data-i18n="auto-hero-title">PEITO 중국 수입차 글로벌 유통</h2>
+                            <span class="badge auto-badge" data-i18n="auto-badge">PAYTTO AUTO LOGISTICS</span>
+                            <h2 data-i18n="auto-hero-title">PAYTTO 중국 수입차 글로벌 유통</h2>
                             <p data-i18n="auto-hero-desc">페이또는 중국의 유수 스마트 전기차 브랜드와의 긴밀한 파트너십을 바탕으로, 고성능 친환경 차량의 수입, 통관, 인증 및 국내 전역 유통망 비즈니스를 수행합니다.</p>
                         </div>
                     </div>
@@ -465,13 +535,71 @@
                             <span class="metric-lbl" data-i18n="auto-perf-lbl3">통관 및 검사 소요일</span>
                         </div>
                     </div>
+
+                    <!-- Defense Supply Contract Feature -->
+                    <div class="military-card glass-card margin-top-md">
+                        <div class="military-badge" data-i18n="auto-military-badge">국방부 독점 공급 계약</div>
+                        <h3 data-i18n="auto-military-title">국방부 복지단 전기차 공식 독점 공급</h3>
+                        <p data-i18n="auto-military-desc">국방부 복지단 연계 친환경 전기차 초기 3,000대 독점 공급 확정 및 2026년 5천대 → 2027년 1.5만대 → 2028년 3만대 로드맵 추진 중.</p>
+                        <div class="roadmap-pills">
+                            <span class="pill">2026년: 5,000대 (세단/SUV/밴)</span>
+                            <span class="pill">2027년: 15,000대 (부대 관용차 교체)</span>
+                            <span class="pill">2028년: 30,000대 (전군 인프라)</span>
+                        </div>
+                    </div>
+
+                    <!-- Partner Brands & 48 Dealer Network -->
+                    <div class="partner-brands-wrap margin-top-md">
+                        <div class="brand-badges-list">
+                            <span class="brand-badge">BAIC (북경자동차)</span>
+                            <span class="brand-badge">BAW (북경자동차제조창)</span>
+                            <span class="brand-badge">Geely (길리자동차)</span>
+                            <span class="brand-badge">Leapmotor (립모터)</span>
+                            <span class="brand-badge">FAW (중국제일자동차)</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 6-2: Energy & Special Mobility -->
+                <section id="energy-special" class="content-section" style="display: none;">
+                    <div class="hero-banner glass-card energy-banner">
+                        <div class="hero-overlay"></div>
+                        <div class="hero-text-wrap">
+                            <span class="badge energy-badge" data-i18n="energy-hero-badge">NEXT ENERGY & SPECIAL MOBILITY</span>
+                            <h2 data-i18n="energy-hero-title">자원 순환 & 미래 특수 모빌리티</h2>
+                            <p data-i18n="energy-hero-desc">폐배터리 리사이클링(Black Mass), 글로벌 100MW 태양광 발전소, 수륙양용 전기카트 및 인명구조 드론, 우주 캡슐 모듈러 하우징으로 미래 지속가능한 산업 가치를 창출합니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="special-grid margin-top-md">
+                        <div class="special-card glass-card">
+                            <i class="fa-solid fa-recycle special-icon"></i>
+                            <h4 data-i18n="tech-battery-title">폐배터리 재활용 & 자원 순환</h4>
+                            <p data-i18n="tech-battery-desc">사용후 전기차 배터리를 수거하여 블랙매스(Black Mass)를 추출하고 리튬, 니켈 등 핵심 자원 공급망을 구축합니다.</p>
+                        </div>
+                        <div class="special-card glass-card">
+                            <i class="fa-solid fa-solar-panel special-icon"></i>
+                            <h4 data-i18n="tech-solar-title">100MW 글로벌 태양광 & 수상 양식</h4>
+                            <p data-i18n="tech-solar-desc">카자흐스탄, 우즈베키스탄, 베트남 등지에서 100MW급 태양광 발전소 단지 건설 및 태양광 결합 친환경 수상 양식 프로젝트를 전개합니다.</p>
+                        </div>
+                        <div class="special-card glass-card">
+                            <i class="fa-solid fa-water special-icon"></i>
+                            <h4 data-i18n="tech-amphibious-title">수륙양용 전기차 & 구조 드론</h4>
+                            <p data-i18n="tech-amphibious-desc">킨텍스(KINTEX) 전시 출품 수륙양용 전기카트 및 골든타임 수중 인명구조용 특수 드론(JX-6A)을 제조 공급합니다.</p>
+                        </div>
+                        <div class="special-card glass-card">
+                            <i class="fa-solid fa-shuttle-space special-icon"></i>
+                            <h4 data-i18n="tech-capsule-title">스마트 우주 캡슐 & 특수 트레일러</h4>
+                            <p data-i18n="tech-capsule-desc">관광/캠핑/오피스용 모듈러 스마트 우주 캡슐(Space Capsule) 및 스포츠카/특수장비 전용 트레일러 커스텀 솔루션을 제공합니다.</p>
+                        </div>
+                    </div>
                 </section>
 
                 <!-- Section 7: Contact -->
                 <section id="contact" class="content-section" style="display: none;">
                     <div class="contact-layout">
                         <div class="contact-info-panel glass-card">
-                            <h2 data-i18n="contact-info-title">PEITO 비즈니스<br>협력 및 문의</h2>
+                            <h2 data-i18n="contact-info-title">PAYTTO 비즈니스<br>협력 및 문의</h2>
                             <p data-i18n="contact-info-desc">원자재 대량 공급 계약, 전기차 위탁 제조 협력, 파트너십 구축 등 페이또의 글로벌 전략 협력 담당자가 신속히 안내해 드리겠습니다.</p>
                             
                             <div class="contact-channels">
@@ -493,14 +621,14 @@
                                     <i class="fa-solid fa-envelope-open-text"></i>
                                     <div>
                                         <h5 data-i18n="contact-ch3-title">비즈니스 문의 이메일</h5>
-                                        <p>trading@peito-global.com</p>
+                                        <p>trading@paytto-global.com</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="contact-form-panel glass-card">
-                            <form id="peito-contact-form" onsubmit="handleContactSubmit(event)">
+                            <form id="paytto-contact-form" onsubmit="handleContactSubmit(event)">
                                 <div class="form-row">
                                     <div class="form-group">
                                         <label for="client-name" data-i18n="form-label-name">성명 *</label>
@@ -545,14 +673,15 @@
                 <footer class="main-footer glass-card">
                     <div class="footer-content">
                         <div class="footer-info">
-                            <span class="footer-logo">PEITO</span>
+                            <span class="footer-logo">PAYTTO</span>
                             <p class="footer-address" data-i18n="contact-ch1-desc">서울특별시 강서구 마곡중앙6로 40 (마곡동, 장흥빌딩) 702호 페이또</p>
-                            <p class="footer-copyright" data-i18n="copyright">© 2026 PEITO Co., Ltd. All rights reserved.</p>
+                            <p class="footer-copyright" data-i18n="copyright">© 2026 PAYTTO Co., Ltd. All rights reserved.</p>
                         </div>
                         <div class="footer-links">
                             <a href="#" onclick="showSection('company-intro')" data-i18n="nav-company-intro">회사 개요</a>
                             <a href="#" onclick="showSection('materials-gold')" data-i18n="nav-group-materials">원자재 사업부</a>
                             <a href="#" onclick="showSection('automotive')" data-i18n="nav-automotive">중국 수입차 유통</a>
+                            <a href="#" onclick="showSection('energy-special')" data-i18n="nav-energy-special">에너지 & 특수 모빌리티</a>
                             <a href="#" onclick="showSection('contact')" data-i18n="nav-contact">협력 문의</a>
                         </div>
                     </div>
@@ -571,6 +700,6 @@
         </div>
     </div>
 
-    <script src="app.js?v=5"></script>
+    <script src="app.js?v=6"></script>
 </body>
 </html>

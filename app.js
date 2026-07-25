@@ -10,17 +10,19 @@ const i18n = {
         "nav-coal": "석탄 (Coal)",
         "nav-group-mobility": "모빌리티 사업부",
         "nav-automotive": "중국 수입차 유통",
+        "nav-group-energy": "신사업 & 미래 기술",
+        "nav-energy-special": "에너지 & 특수 모빌리티",
         "nav-group-partnership": "파트너십",
         "nav-contact": "협력 문의",
         "ticker-title": "원자재 실시간 시세",
         "trading-active": "Global Trading Active",
-        "copyright": "© 2026 PEITO Co., Ltd. All rights reserved.",
+        "copyright": "© 2026 PAYTTO Co., Ltd. All rights reserved.",
         "header-consult-btn": "파트너 실시간 상담",
         
         // Intro Section
-        "hero-badge": "EST. 2012",
+        "hero-badge": "EST. 2013",
         "hero-title": "글로벌 자원의 혁신과<br>미래 모빌리티의 융합",
-        "hero-desc": "페이또(PEITO)는 천연 원자재 트레이딩 역량과 독자적인 하드웨어 설계 능력을 바탕으로, 원자재 조달부터 미래형 모빌리티 제조까지 수직계열화된 가치를 창출하는 혁신 기업입니다.",
+        "hero-desc": "페이또(PAYTTO)는 천연 원자재 트레이딩 역량과 독자적인 하드웨어 설계 능력을 바탕으로, 원자재 조달부터 미래형 모빌리티 제조까지 수직계열화된 가치를 창출하는 혁신 기업입니다.",
         "hero-btn-primary": "모빌리티 알아보기",
         "hero-btn-secondary": "원자재 사업부",
         "core-value-title": "페이또의 핵심 사업 역량",
@@ -101,7 +103,7 @@ const i18n = {
         
         // Automotive Section
         "auto-badge": "중국 수입차 유통 사업부",
-        "auto-hero-title": "PEITO 중국 수입차 글로벌 유통",
+        "auto-hero-title": "PAYTTO 중국 수입차 글로벌 유통",
         "auto-hero-desc": "페이또는 중국의 유수 스마트 전기차 브랜드와의 긴밀한 파트너십을 바탕으로, 고성능 친환경 차량의 수입, 통관, 인증 및 국내 전역 유통망 비즈니스를 수행합니다.",
         "auto-grid-title": "유통 플랫폼 핵심 역량",
         "auto-grid-desc": "글로벌 공급망과 통관 전문성을 결합한 페이또만의 독자적인 수입차 유통 프로세스입니다.",
@@ -119,7 +121,7 @@ const i18n = {
         "auto-perf-lbl3": "통관 및 검사 소요일",
         
         // Contact Section
-        "contact-info-title": "PEITO 비즈니스<br>협력 및 문의",
+        "contact-info-title": "PAYTTO 비즈니스<br>협력 및 문의",
         "contact-info-desc": "원자재 대량 공급 계약, 전기차 위탁 제조 협력, 파트너십 구축 등 페이또의 글로벌 전략 협력 담당자가 신속히 안내해 드리겠습니다.",
         "contact-ch1-title": "본사 소재지",
         "contact-ch1-desc": "서울특별시 강서구 마곡중앙6로 40 (마곡동, 장흥빌딩) 702호 페이또",
@@ -139,6 +141,36 @@ const i18n = {
         "form-label-msg": "문의 상세내용 *",
         "form-ph-msg": "구체적인 원자재 필요 규격 또는 제휴 제안 내용을 기재해주시면 담당자가 빠른 시일 내로 연락드립니다.",
         "form-btn-submit": "협력 요청서 전송",
+        
+        // Profile PDF Extended Data
+        "ceo-title": "대표이사 인사말",
+        "ceo-name": "CEO 양기웅 (Kiwoong Yang)",
+        "ceo-quote": "“Green Mobility, Vision for Future”",
+        "ceo-desc": "페이또는 2013년 설립 이래 한중 친환경 무역의 교두보이자 고성능 모빌리티, 신재생 에너지, 원자재 트레이딩 및 자원 순환 시스템을 선도하는 글로벌 산업 솔루션 기업입니다.",
+        "subsidiary-title": "페이또 그룹 주요 자회사",
+        "subsidiary-desc": "수입차 유통, 이커머스, A/S 네트워크 및 모빌리티 컨설팅을 전개하는 페이또의 핵심 자회사 생태계입니다.",
+        "al-volume": "월 20,000톤 (연 24만 톤)",
+        "copper-volume": "월 5,000톤 (연 6만 톤)",
+        "coal-volume": "연 1,500,000톤 공급",
+        "oil-cat-tag": "Energy & Resources",
+        "oil-product-title": "글로벌 에너지 트레이딩, 원유 (Crude Oil)",
+        "oil-product-desc": "글로벌 공급망 네트워크를 기반으로 월 100,000톤 이상의 원유 및 석유계 원자재를 안정적으로 수급 및 유통합니다.",
+        "oil-volume": "월 100,000톤 (연 120만 톤)",
+        "auto-military-badge": "국방부 독점 공급 계약",
+        "auto-military-title": "국방부 복지단 전기차 공식 독점 공급",
+        "auto-military-desc": "국방부 복지단 연계 친환경 전기차 초기 3,000대 독점 공급 확정 및 2026년 5천대 → 2027년 1.5만대 → 2028년 3만대 로드맵 추진 중.",
+        "auto-dealer-spec": "전국 8개 거점 48개 대리점 & A/S망",
+        "energy-hero-badge": "NEXT ENERGY & SPECIAL MOBILITY",
+        "energy-hero-title": "자원 순환 & 미래 특수 모빌리티",
+        "energy-hero-desc": "폐배터리 리사이클링(Black Mass), 글로벌 100MW 태양광 발전소, 수륙양용 전기카트 및 인명구조 드론, 우주 캡슐 모듈러 하우징으로 미래 지속가능한 산업 가치를 창출합니다.",
+        "tech-battery-title": "폐배터리 재활용 & 자원 순환",
+        "tech-battery-desc": "사용후 전기차 배터리를 수거하여 블랙매스(Black Mass)를 추출하고 리튬, 니켈 등 핵심 자원 공급망을 구축합니다.",
+        "tech-solar-title": "100MW 글로벌 태양광 & 수상 양식",
+        "tech-solar-desc": "카자흐스탄, 우즈베키스탄, 베트남 등지에서 100MW급 태양광 발전소 단지 건설 및 태양광 결합 친환경 수상 양식 프로젝트를 전개합니다.",
+        "tech-amphibious-title": "수륙양용 전기차 & 구조 드론",
+        "tech-amphibious-desc": "킨텍스(KINTEX) 전시 출품 수륙양용 전기카트 및 골든타임 수중 인명구조용 특수 드론(JX-6A)을 제조 공급합니다.",
+        "tech-capsule-title": "스마트 우주 캡슐 & 특수 트레일러",
+        "tech-capsule-desc": "관광/캠핑/오피스용 모듈러 스마트 우주 캡슐(Space Capsule) 및 스포츠카/특수장비 전용 트레일러 커스텀 솔루션을 제공합니다.",
         
         // Success Modal
         "modal-title": "성공적으로 접수되었습니다",
@@ -160,20 +192,22 @@ const i18n = {
         "nav-coal": "Coal",
         "nav-group-mobility": "MOBILITY",
         "nav-automotive": "China Car Distribution",
+        "nav-group-energy": "NEW ENERGY & FUTURE TECH",
+        "nav-energy-special": "Energy & Special Mobility",
         "nav-group-partnership": "PARTNERSHIP",
         "nav-contact": "Contact Us",
         "ticker-title": "Live Commodity Price",
         "trading-active": "Global Trading Active",
-        "copyright": "© 2026 PEITO Co., Ltd. All rights reserved.",
+        "copyright": "© 2026 PAYTTO Co., Ltd. All rights reserved.",
         "header-consult-btn": "Live Consultation",
         
         // Intro Section
-        "hero-badge": "EST. 2012",
+        "hero-badge": "EST. 2013",
         "hero-title": "Innovation of Global Resources<br>& Future Mobility Integration",
-        "hero-desc": "PEITO is an innovative company creating vertical value from raw material procurement to future mobility manufacturing based on global resource trading capabilities and proprietary hardware design engineering.",
+        "hero-desc": "PAYTTO is an innovative company creating vertical value from raw material procurement to future mobility manufacturing based on global resource trading capabilities and proprietary hardware design engineering.",
         "hero-btn-primary": "Explore Mobility",
         "hero-btn-secondary": "Raw Materials",
-        "core-value-title": "PEITO Core Business Strengths",
+        "core-value-title": "PAYTTO Core Business Strengths",
         "core-value-desc": "A balanced business portfolio combining premium resources and high-tech hardware.",
         "value-card1-title": "Supply Chain Leadership",
         "value-card1-desc": "Stable and efficient supply of essential resources such as gold, aluminum, copper, and coal for high-tech manufacturing.",
@@ -188,10 +222,10 @@ const i18n = {
         "stat-label-purity": "Purity Verification Rate",
         
         // Gold Section
-        "gold-media-caption": "PEITO-certified 999.9 Fine Gold Bullion",
+        "gold-media-caption": "PAYTTO-certified 999.9 Fine Gold Bullion",
         "gold-cat-tag": "Safe Haven Asset",
         "gold-product-title": "Physical Gold & High-Value Industrial Gold Trade",
-        "gold-product-desc": "PEITO safely supplies premium gold bullion to hedge global macroeconomic risks. We also secure supply chains for high-purity gold sputtering targets and bonding wires.",
+        "gold-product-desc": "PAYTTO safely supplies premium gold bullion to hedge global macroeconomic risks. We also secure supply chains for high-purity gold sputtering targets and bonding wires.",
         "gold-bullet1": "Supply of 99.99% gold bars guaranteed under LBMA delivery standards.",
         "gold-bullet2": "Integrated with global smart security vaults, providing fully-insured safe deposit solutions.",
         "gold-bullet3": "Supplying micro gold bonding wires to enhance corrosion resistance in automotive electronics.",
@@ -200,7 +234,7 @@ const i18n = {
         "gold-table-use3": "Display thin film deposition, research coating",
         
         // Aluminum Section
-        "al-media-caption": "PEITO Global Terminal Aluminum Material Unloading Process",
+        "al-media-caption": "PAYTTO Global Terminal Aluminum Material Unloading Process",
         "al-cat-tag": "Eco & Lightweight",
         "al-product-title": "Futuristic Ultra-Lightweight Aluminum Alloys",
         "al-product-desc": "We process and distribute high-performance aluminum alloys essential for lightweight structures in the eco-friendly energy era. Our high-tensile plates and extrusions construct EV battery packs and vehicle chassis.",
@@ -220,7 +254,7 @@ const i18n = {
         "copper-media-caption": "High-purity oxygen-free copper tubes and wire loops",
         "copper-cat-tag": "Electrification Core",
         "copper-product-title": "Nerve Center of EV Revolution & Power Grids",
-        "copper-product-desc": "Copper is the essential pathway for renewable energy grid transmission and electric motor propulsion. PEITO coordinates the global supply of 99.999% oxygen-free copper (OFC) and ultra-thin foils.",
+        "copper-product-desc": "Copper is the essential pathway for renewable energy grid transmission and electric motor propulsion. PAYTTO coordinates the global supply of 99.999% oxygen-free copper (OFC) and ultra-thin foils.",
         "copper-bullet1": "Global bulk trading of 99.99% electrolytic copper cathodes (LME Grade A).",
         "copper-bullet2": "Procuring nanometer-scale precision copper foils for lithium-ion battery anode collectors.",
         "copper-bullet3": "Producing extruded copper rods for power grid transmission lines and industrial transformers.",
@@ -233,10 +267,10 @@ const i18n = {
         "copper-table-use3": "Anode collector foil for Li-ion batteries (4.5~8μm thickness)",
         
         // Coal Section
-        "coal-media-caption": "High-calorific coal unloaded at PEITO bulk terminal",
+        "coal-media-caption": "High-calorific coal unloaded at PAYTTO bulk terminal",
         "coal-cat-tag": "Industrial Energy",
         "coal-product-title": "Industrial Energy, High-Calorific Clean Coal Trade",
-        "coal-product-desc": "We supply coking coal and high-calorific thermal coal across the Asia-Pacific region, crucial for steel manufacturing and power generation. PEITO ensures strict eco-friendly low-impurity standards.",
+        "coal-product-desc": "We supply coking coal and high-calorific thermal coal across the Asia-Pacific region, crucial for steel manufacturing and power generation. PAYTTO ensures strict eco-friendly low-impurity standards.",
         "coal-bullet1": "Direct import of premium Hard Coking Coal used for blast furnace coke raw material.",
         "coal-bullet2": "Providing clean coal with low sulphur and nitrogen content to facilitate carbon capture.",
         "coal-bullet3": "Seamless integration of dry bulk shipping and real-time maritime logistics tracking.",
@@ -251,10 +285,10 @@ const i18n = {
         
         // Automotive Section
         "auto-badge": "CHINA AUTO DISTRIBUTION DIVISION",
-        "auto-hero-title": "PEITO Chinese Car Global Distribution",
-        "auto-hero-desc": "Based on close partnerships with leading smart EV brands in China, PEITO manages the import, customs clearance, certification, and domestic logistics network for high-performance eco-friendly vehicles.",
+        "auto-hero-title": "PAYTTO Chinese Car Global Distribution",
+        "auto-hero-desc": "Based on close partnerships with leading smart EV brands in China, PAYTTO manages the import, customs clearance, certification, and domestic logistics network for high-performance eco-friendly vehicles.",
         "auto-grid-title": "Core Distribution Capabilities",
-        "auto-grid-desc": "PEITO's unique import distribution process combining global supply chains and customs clearance expertise.",
+        "auto-grid-desc": "PAYTTO's unique import distribution process combining global supply chains and customs clearance expertise.",
         "auto-tech1-title": "One-stop Customs & Certification",
         "auto-tech1-desc": "We provide swift environmental/transport ministry certification procedures and comprehensive battery safety warranty inspection services tailored to domestic regulations.",
         "auto-tech2-title": "National Dealer & AS Network",
@@ -269,30 +303,60 @@ const i18n = {
         "auto-perf-lbl3": "Customs & Inspection Period",
         
         // Contact Section
-        "contact-info-title": "PEITO Business<br>Partnership & Inquiry",
+        "contact-info-title": "PAYTTO Business<br>Partnership & Inquiry",
         "contact-info-desc": "Our global strategy team will guide you through raw material supply agreements, EV contract manufacturing, and joint ventures.",
         "contact-ch1-title": "Corporate Headquarters",
-        "contact-ch1-desc": "RM 702, Jangheung Bldg, 40 Magokjungang 6-ro, Gangseo-gu, Seoul, Korea (PEITO)",
+        "contact-ch1-desc": "RM 702, Jangheung Bldg, 40 Magokjungang 6-ro, Gangseo-gu, Seoul, Korea (PAYTTO)",
         "contact-ch2-title": "Global Trading Desk",
         "contact-ch3-title": "Business Email Inbox",
         "form-label-name": "Full Name *",
         "form-ph-name": "Enter your full name",
         "form-label-company": "Company Name *",
-        "form-ph-company": "e.g., Peito Mobility",
+        "form-ph-company": "e.g., Paytto Mobility",
         "form-label-email": "Business Email *",
         "form-label-type": "Target Division *",
         "form-opt-select": "Please select",
         "form-opt-mat": "Raw Materials Purchase (Gold, Al, Cu, Coal)",
         "form-opt-auto": "Mobility / Automotive Partnership",
         "form-opt-ir": "Investment & IR",
-        "form-opt-other": "Other Business Alliance",
+        "form-opt-other": "Other Business Partnership",
         "form-label-msg": "Inquiry Details *",
-        "form-ph-msg": "Please specify raw material specs or partnership proposal details. Our representative will contact you shortly.",
+        "form-ph-msg": "Please detail your raw material specs or proposal. Our specialist will contact you shortly.",
         "form-btn-submit": "Send Proposal Request",
+        
+        // Profile PDF Extended Data
+        "ceo-title": "Message from CEO",
+        "ceo-name": "CEO Kiwoong Yang",
+        "ceo-quote": "“Green Mobility, Vision for Future”",
+        "ceo-desc": "Established in 2013, PAYTTO is a comprehensive international trading and industrial solutions provider leading eco-friendly mobility, renewable energy, raw materials, and resource recycling.",
+        "subsidiary-title": "PAYTTO Group Subsidiaries",
+        "subsidiary-desc": "Core subsidiary ecosystem covering imported car distribution, e-commerce, after-sales networks, and vehicle consulting.",
+        "al-volume": "20,000 Tons/Mo (240k Tons/Yr)",
+        "copper-volume": "5,000 Tons/Mo (60k Tons/Yr)",
+        "coal-volume": "1.5 Million Tons/Yr",
+        "oil-cat-tag": "Energy & Resources",
+        "oil-product-title": "Global Energy Trading, Crude Oil",
+        "oil-product-desc": "We supply and distribute over 100,000 tons of crude oil monthly based on our global resource logistics network.",
+        "oil-volume": "100,000 Tons/Mo (1.2M Tons/Yr)",
+        "auto-military-badge": "Exclusive Defense Contract",
+        "auto-military-title": "Exclusive EV Supply for Ministry of Defense",
+        "auto-military-desc": "Confirmed initial order of 3,000 EVs for the Military Welfare Group with a phased expansion roadmap (5k in 2026 → 15k in 2027 → 30k in 2028).",
+        "auto-dealer-spec": "48 Authorized Dealers Across 8 Hub Regions",
+        "energy-hero-badge": "NEXT ENERGY & SPECIAL MOBILITY",
+        "energy-hero-title": "Resource Recycling & Special Mobility",
+        "energy-hero-desc": "Creating sustainable industrial value through battery recycling (Black Mass), global 100MW solar plants, amphibious vehicles, rescue drones, and space capsules.",
+        "tech-battery-title": "Battery Recycling & Black Mass",
+        "tech-battery-desc": "Recycling used EV batteries to extract Black Mass and secure critical mineral supply chains including lithium and nickel.",
+        "tech-solar-title": "100MW Solar Plants & Aquaculture",
+        "tech-solar-desc": "Developing 100MW solar power plants in Kazakhstan, Uzbekistan, and Vietnam alongside solar-powered eco-aquaculture projects.",
+        "tech-amphibious-title": "Amphibious EVs & Rescue Drones",
+        "tech-amphibious-desc": "Manufacturing KINTEX-featured amphibious electric carts and rapid water rescue drones (JX-6A) for emergency golden-time saving.",
+        "tech-capsule-title": "Smart Space Capsules & Trailers",
+        "tech-capsule-desc": "Custom modular Space Capsules for tourism/camping/office and specialized trailers for luxury vehicles and drones.",
         
         // Success Modal
         "modal-title": "Successfully Submitted",
-        "modal-desc": "Your partnership request has been securely sent to PEITO's Global Sales Division. A representative will contact you via email within 24 hours.",
+        "modal-desc": "Your partnership request has been securely sent to PAYTTO's Global Sales Division. A representative will contact you via email within 24 hours.",
         "modal-btn-close": "Close",
         
         // Common Labels
@@ -310,20 +374,22 @@ const i18n = {
         "nav-coal": "煤炭 (Coal)",
         "nav-group-mobility": "智能出行",
         "nav-automotive": "中国进口车分销",
+        "nav-group-energy": "新业务与未来科技",
+        "nav-energy-special": "新能源与特种出行",
         "nav-group-partnership": "合作洽谈",
         "nav-contact": "合作咨询",
         "ticker-title": "原材料实时行情",
         "trading-active": "全球贸易服务中",
-        "copyright": "© 2026 PEITO Co., Ltd. 保留所有权利。",
+        "copyright": "© 2026 PAYTTO Co., Ltd. 保留所有权利。",
         "header-consult-btn": "合伙人在线咨询",
         
         // Intro Section
-        "hero-badge": "始于 2012",
+        "hero-badge": "始于 2013",
         "hero-title": "全球资源的创新与<br>未来移动出行的融合",
-        "hero-desc": "PEITO(贝托)依托全球资源贸易能力与专有硬件设计工程，创造了从原材料采购到未来出行制造的垂直一体化价值体系。",
+        "hero-desc": "PAYTTO(贝托)依托全球资源贸易能力与专有硬件设计工程，创造了从原材料采购到未来出行制造的垂直一体化价值体系。",
         "hero-btn-primary": "了解出行事业",
         "hero-btn-secondary": "原材料事业部",
-        "core-value-title": "PEITO的核心业务优势",
+        "core-value-title": "PAYTTO的核心业务优势",
         "core-value-desc": "融合优质原材料与高科技硬件的多元化业务组合。",
         "value-card1-title": "供应链领军优势",
         "value-card1-desc": "稳定高效地供应黄金、铝、铜、煤炭等高科技制造与能源基建所需的核心资源。",
@@ -417,7 +483,7 @@ const i18n = {
         "auto-perf-lbl3": "最大输出功率 (双电机合算)",
         
         // Contact Section
-        "contact-info-title": "PEITO 商务<br>合作及咨询",
+        "contact-info-title": "PAYTTO 商务<br>合作及咨询",
         "contact-info-desc": "我们的全球战略团队将为您解答原材料大宗采购、电动车代工制造及合资企业合作等问题。",
         "contact-ch1-title": "集团总部",
         "contact-ch1-desc": "韩国首尔特别市江西区麻谷中央6路 40 (麻谷洞, 长兴大厦) 702号 贝托",
@@ -433,14 +499,44 @@ const i18n = {
         "form-opt-mat": "原材料采购 (黄金, 铝, 铜, 煤炭)",
         "form-opt-auto": "智能出行 / 汽车业务合作",
         "form-opt-ir": "投资及IR咨询",
-        "form-opt-other": "其他业务合作",
-        "form-label-msg": "咨询详情 *",
-        "form-ph-msg": "请写明具体的原材料规格或合作建议详情。我们的代表将尽快与您联系。",
-        "form-btn-submit": "提交合作意向书",
+        "form-opt-other": "其他商务合作",
+        "form-label-msg": "咨询详细内容 *",
+        "form-ph-msg": "请填写具体的原材料需求规格或合作建议内容，负责人将尽快与您联系。",
+        "form-btn-submit": "发送合作申请",
+        
+        // Profile PDF Extended Data
+        "ceo-title": " CEO 寄语",
+        "ceo-name": " CEO 杨基雄 (Kiwoong Yang)",
+        "ceo-quote": "“绿色出行，展望未来”",
+        "ceo-desc": "贝托成立于 2013 年，是中韩绿色贸易的桥梁，也是引领高性能出行、可再生能源、原材料贸易及资源循环系统的全球工业解决方案企业。",
+        "subsidiary-title": "贝托集团主要子公司",
+        "subsidiary-desc": "涵盖进口车分销、跨境电商、售后服务网络及汽车咨询的贝托核心子公司生态系统。",
+        "al-volume": "月均2万吨 (年均24万吨)",
+        "copper-volume": "月均5,000吨 (年均6万吨)",
+        "coal-volume": "年均150万吨供应",
+        "oil-cat-tag": "能源与资源",
+        "oil-product-title": "全球能源贸易：原油 (Crude Oil)",
+        "oil-product-desc": "基于全球资源物流网络，每月稳定供应和分销超過 10 万吨原油及石油类原料。",
+        "oil-volume": "月均10万吨 (年均120万吨)",
+        "auto-military-badge": "国防部独家供应协议",
+        "auto-military-title": "韩国国防部福利团电动汽车独家供应",
+        "auto-military-desc": "已确认国防部福利团首批 3,000 台电动车独家订单，并推进 2026 年 5 千台 → 2027 年 1.5 万台 → 2028 年 3 万台的阶段性路线图。",
+        "auto-dealer-spec": "全国 8 大枢纽共 48 家经销商与售后网络",
+        "energy-hero-badge": "NEXT ENERGY & SPECIAL MOBILITY",
+        "energy-hero-title": "资源循环与未来特种出行",
+        "energy-hero-desc": "通过废旧电池回收(Black Mass)、全球 100MW 光伏电站、水陆两栖电动车、水上救援无人机及太空舱模块化房屋，创造未来可持续工业价值。",
+        "tech-battery-title": "废旧电池回收与资源循环",
+        "tech-battery-desc": "回收电动汽车废旧电池，提取黑粉(Black Mass)，保障锂、镍等关键矿产供应链。",
+        "tech-solar-title": "100MW 全球光伏与水上养殖",
+        "tech-solar-desc": "在哈萨克斯坦、乌兹别克斯坦、越南等地建设 100MW 光伏电站及光伏结合水产养殖项目。",
+        "tech-amphibious-title": "水陆两栖电动车与救援无人机",
+        "tech-amphibious-desc": "制造 KINTEX 展出的水陆两栖电动卡特车及黄金救援时间水上特种无人机 (JX-6A)。",
+        "tech-capsule-title": "智能太空舱与特种拖车",
+        "tech-capsule-desc": "定制用于旅游/露营/办公的模块化智能太空舱(Space Capsule)，及超跑/特种设备专属拖车解决方案。",
         
         // Success Modal
         "modal-title": "提交成功",
-        "modal-desc": "您的合作咨询已被安全发送至 PEITO 环球销售事业部。代表将在 24 小时内通过电子邮件与您联系。",
+        "modal-desc": "您的合作咨询已被安全发送至 PAYTTO 环球销售事业部。代表将在 24 小时内通过电子邮件与您联系。",
         "modal-btn-close": "确认",
         
         // Common Labels
@@ -504,6 +600,12 @@ function showSection(sectionId) {
             break;
         case 'automotive':
             displayTitle = isKo ? '중국 수입차 유통' : (isCh ? '中国进口车分销' : 'China Car Distribution');
+            break;
+        case 'materials-oil':
+            displayTitle = isKo ? '원자재 > 원유 (Crude Oil)' : (isCh ? '原材料 > 原油' : 'Raw Materials > Crude Oil');
+            break;
+        case 'energy-special':
+            displayTitle = isKo ? '에너지 & 특수 모빌리티' : (isCh ? '新能源与特种出行' : 'Energy & Special Mobility');
             break;
         case 'contact':
             displayTitle = isKo ? '파트너십 > 협력 문의' : (isCh ? '合作伙伴 > 咨询' : 'Partnership > Inquiries');
@@ -666,7 +768,7 @@ function handleContactSubmit(event) {
         // Reset button and form
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalContent;
-        document.getElementById('peito-contact-form').reset();
+        document.getElementById('paytto-contact-form').reset();
     }, 1500);
 }
 

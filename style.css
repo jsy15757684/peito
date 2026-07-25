@@ -1368,3 +1368,216 @@ nav li.active {
         flex-wrap: wrap;
     }
 }
+
+/* PDF Profile Extended Styles */
+.margin-top-md {
+    margin-top: 2rem;
+}
+
+.margin-top-sm {
+    margin-top: 1rem;
+}
+
+/* CEO Card */
+.ceo-card {
+    padding: 2.2rem 2.5rem;
+    border-left: 4px solid var(--accent-color);
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.6) 0%, rgba(15, 23, 42, 0.8) 100%);
+    border-radius: 1.25rem;
+}
+
+.ceo-info .sub-badge {
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    color: var(--accent-color);
+    text-transform: uppercase;
+}
+
+.ceo-info h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin: 0.6rem 0;
+    color: var(--text-primary);
+}
+
+.ceo-info p {
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    line-height: 1.7;
+}
+
+.ceo-signature {
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+}
+
+/* Subsidiaries Grid */
+.subsidiary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
+
+.sub-card {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s var(--transition-smooth);
+}
+
+.sub-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(0, 229, 255, 0.4);
+}
+
+.sub-name {
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+.sub-detail {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+/* Category & Volume Badges */
+.category-tag.oil-tag {
+    background: rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.volume-badge {
+    display: inline-block;
+    margin-top: 0.75rem;
+    padding: 0.35rem 0.85rem;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    background: rgba(34, 197, 94, 0.15);
+    color: #4ade80;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+/* Military Contract Card */
+.military-card {
+    padding: 2rem 2.2rem;
+    border-radius: 1.25rem;
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(15, 23, 42, 0.7) 100%);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.military-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    background: #10b981;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+}
+
+.military-card h3 {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.military-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.roadmap-pills {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-top: 1.25rem;
+}
+
+.roadmap-pills .pill {
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--border-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Partner Brands List */
+.brand-badges-list {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.brand-badge {
+    padding: 0.5rem 1.1rem;
+    border-radius: 10px;
+    background: rgba(0, 229, 255, 0.08);
+    border: 1px solid rgba(0, 229, 255, 0.25);
+    color: #00e5ff;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* Energy & Special Mobility Grid */
+.energy-banner {
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.15) 0%, rgba(10, 14, 23, 0.9) 100%);
+    border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+.energy-badge {
+    background: rgba(168, 85, 247, 0.2);
+    color: #c084fc;
+    border: 1px solid rgba(168, 85, 247, 0.4);
+}
+
+.special-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.special-card {
+    padding: 2rem 1.5rem;
+    border-radius: 1.25rem;
+    transition: transform 0.3s var(--transition-smooth), border-color 0.3s var(--transition-smooth);
+}
+
+.special-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(168, 85, 247, 0.5);
+}
+
+.special-icon {
+    font-size: 2rem;
+    color: #c084fc;
+    margin-bottom: 1rem;
+}
+
+.special-card h4 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.special-card p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
